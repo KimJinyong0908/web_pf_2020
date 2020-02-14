@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>vivienne-김진용-수정후</title>
+
+
+    <!-- 제이쿼리 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- owl 캐러셀 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
+
+    <!-- 폰트어썸 불러오기 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <!-- css 불러오기 -->
+    <!-- js 불러오기는 맨 아래에 넣어야 합니다. -->
+
+    <link rel="stylesheet" href="./common.css">
+
+
+
+
+</head>
+
+<body>
+    <div class="header con-min-width">
+        <div class="header-bg">
+            <div class="con">
+                <div class="inner">
+                    <nav class="menu-box-1 new-box row line-height-0-ch-only">
+                        <ul class="row">
+                            <li class="cell"><a href="#">로그인</a></li>
+                            <li class="cell"><a href="#">회원가입</a></li>
+                            <li class="cell"><a href="#">MY SHOP</a></li>
+                            <li class="cell"><a href="#">장바구니</a></li>
+                            <li class="cell"><a href="#">주문조회</a></li>
+                            <li class="cell"><a href="#">고객센터</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="menu-box-2 new-box line-height-0-ch-only">
+                        <ul class="row">
+                            <li class="cell"><a href="#">NOTICE</a></li>
+                            <li class="cell"><a href="#">EVENT</a></li>
+                            <li class="cell"><a href="#">REVIE</a></li>
+                            <li class="cell"><a href="#">WBLOGGER</a></li>
+                            <li class="cell"><a href="#">PR</a></li>
+                            <li class="cell"><a href="#">FAQ</a></li>
+                            <li class="cell"><a href="#">Q&A</a></li>
+                        </ul>
+                    </nav>
+                    <div class="top-bar relative line-height-0-ch-only text-align-center">
+                        <a class="logo inline-block" href="http://vivienne.kr/" target="_blank"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-logo-1.gif" alt="" class="block"></a>
+                        <form class="search-box">
+                            <input type="text" placeholder="검색어를 입력해주세요.">
+                            <img class="absolute-right absolute-middle" src="https://kimjinyong0908.github.io/web_pf_img/vivienne/ico-search-1.gif" alt="">
+                        </form>
+                    </div>
+                </div>
+                <div class="main-1">
+                    <div class="container">
+                        <div class="category">
+                            <nav class="menu-box-3">
+                                <ul class="row">
+                                    <li class="cell">
+                                        <a href="#">GIFT SET / PACKAGE</a>
+                                        <ul>
+                                            <li><a href="#">어버이날/스승의날</a></li>
+                                            <li><a href="#">블랙스톤</a></li>
+                                            <li><a href="#">골드라벨</a></li>
+                                            <li><a href="#">블랙라벨</a></li>
+                                            <li><a href="#">퀸즈라벨</a></li>
+                                            <li><a href="#">프리미엄아로마</a></li>
+                                            <li><a href="#">포장/카드</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="cell">
+                                        <a href="#">BLACK STONE</a>
+                                        <ul>
+                                            <li><a href="#">대용량디퓨저</a></li>
+                                            <li><a href="#">디퓨저리필</a></li>
+                                            <li><a href="#">악세서리</a></li>
+                                            <li><a href="#">선물세트/포장</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="cell">
+                                        <a href="#">GOLD LABEL</a>
+                                        <ul>
+                                            <li><a href="#">대용량디퓨저</a></li>
+                                            <li><a href="#">디퓨저리필</a></li>
+                                            <li><a href="#">악세서리</a></li>
+                                            <li><a href="#">선물세트/포장</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="cell">
+                                        <a href="#">BLACK LABEL</a>
+                                        <ul>
+                                            <li><a href="#">디퓨저</a></li>
+                                            <li><a href="#">미니디퓨저</a></li>
+                                            <li><a href="#">차량용디퓨저</a></li>
+                                            <li><a href="#">디퓨저리필</a></li>
+                                            <li><a href="#">악세서리</a></li>
+                                            <li><a href="#">선물세트/포장</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="cell">
+                                        <a href="#">QUEEN'S LABEL</a>
+                                        <ul>
+                                            <li><a href="#">디퓨저</a></li>
+                                            <li><a href="#">미니디퓨저</a></li>
+                                            <li><a href="#">차량용디퓨저</a></li>
+                                            <li><a href="#">디퓨저리필</a></li>
+                                            <li><a href="#">악세서리</a></li>
+                                            <li><a href="#">선물세트/포장</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="cell">
+                                        <a href="#">PREMIUM AROMA</a>
+                                        <ul>
+                                            <li><a href="#">디퓨저</a></li>
+                                            <li><a href="#">미니디퓨저</a></li>
+                                            <li><a href="#">차량용디퓨저</a></li>
+                                            <li><a href="#">디퓨저리필</a></li>
+                                            <li><a href="#">악세서리</a></li>
+                                            <li><a href="#">선물세트/포장</a></li>
+                                        </ul>
+
+                                    </li>
+                                    <li class="cell">
+                                        <a href="#">CAR DIFFUSER</a>
+                                        <ul>
+                                            <li><a href="#">디퓨저</a></li>
+                                            <li><a href="#">미니디퓨저</a></li>
+                                            <li><a href="#">차량용디퓨저</a></li>
+                                            <li><a href="#">디퓨저리필</a></li>
+                                            <li><a href="#">악세서리</a></li>
+                                            <li><a href="#">선물세트/포장</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="cell">
+                                        <a href="#">REFILL</a>
+                                        <ul>
+                                            <li><a href="#">블랙스톤</a></li>
+                                            <li><a href="#">골드라벨</a></li>
+                                            <li><a href="#">블랙라벨</a></li>
+                                            <li><a href="#">퀸즈라벨</a></li>
+                                            <li><a href="#">프리미엄아로마</a></li>
+                                            <li><a href="#">스틱/용품</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="cell">
+                                        <a href="#">ACCESSORIES</a>
+                                        <ul>
+                                            <li><a href="#">탁상용받침대</a></li>
+                                            <li><a href="#">벽걸이거치대</a></li>
+                                            <li><a href="#">디퓨저조화</a></li>
+                                            <li><a href="#">스틱/기타</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="main-box row">
+                            <div class="cell">
+                                <div class="img-box"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-left-bn-1.jpg" alt=""></div>
+                                <nav class="menu-list">
+                                    <ul>
+                                        <li><a href="#">[종료] 가정의 달! 어버이 날, ...</a></li>
+                                        <li><a href="#">[종료] 해피 발렌타인 데이 쿠폰 ...</a></li>
+                                        <li><a href="#">[종료] 가정의 달! 어버이 날, ...</a></li>
+                                        <li><a href="#">[종료] 스위트 화이트데이 쿠폰 이 ...</a></li>
+                                        <li><a href="#">[종료] 해피 발렌타인 데이 쿠폰 ...</a></li>
+                                        <li><a href="#">[상시] 구매후기 (상품평) 작성하 ...</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="cell">
+                                <div class="slider-1 relative">
+                                    <div class="side-btns">
+                                        <div class="left-bar absolute-left absolute-middle"><i class="fas fa-chevron-left"></i></div>
+                                        <div class="right-bar absolute-right absolute-middle"><i class="fas fa-chevron-right"></i></div>
+                                    </div>
+                                    <div class="slides">
+                                        <a class="img-box active" href="#">
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-bn-1.jpg" alt="">
+                                            <div>골드 라벨 컬렉션 선물세트</div>
+                                        </a>
+                                        <a class="img-box" href="#">
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-bn-2.jpg" alt="">
+                                            <div>골드 라벨 컬렉션 500ml (10종)</div>
+                                        </a>
+                                        <a class="img-box" href="#">
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-bn-3.jpg" alt="">
+                                            <div>대용량 디퓨저 용 액세서리</div>
+                                        </a>
+                                        <a class="img-box" href="#">
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-bn-4.jpg" alt="">
+                                            <div>블랙 라벨 컬렉션 120ml (8종)</div>
+                                        </a>
+                                        <a class="img-box" href="#">
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-bn-5.jpg" alt="">
+                                            <div>퀸즈 라벨 컬렉션 120ml (6종)</div>
+                                        </a>
+                                        <a class="img-box" href="#">
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-bn-6.jpg" alt="">
+                                            <div>프리미엄 아로마 컬렉션 90ml (8종)</div>
+                                        </a>
+                                        <a class="img-box" href="#">
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-bn-7.jpg" alt="">
+                                            <div>미니 / 블랙 라벨 컬렉션 50ml (8종)</div>
+                                        </a>
+                                        <a class="img-box" href="#">
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-bn-8.jpg" alt="">
+                                            <div>미니 / 퀸즈 라벨 컬렉션 50ml (6종)</div>
+                                        </a>
+                                        <a class="img-box" href="#">
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-bn-9.jpg" alt="">
+                                            <div>미니 / 프리미엄 아로마 컬렉션 50ml (8종)</div>
+                                        </a>
+                                        <a class="img-box" href="#">
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-bn-10.jpg" alt="">
+                                            <div>차량용 / 블랙 라벨 컬렉션 50ml (8종)</div>
+                                        </a>
+                                        <a class="img-box" href="#">
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-bn-11.jpg" alt="">
+                                            <div>차량용 / 퀸즈 라벨 컬렉션 50ml (6종)</div>
+                                        </a>
+                                        <a class="img-box" href="#">
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-bn-12.jpg" alt="">
+                                            <div>차량용 / 프리미엄 아로마 컬렉션 50ml (8종)</div>
+                                        </a>
+                                        <a class="img-box" href="#">
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-bn-13.jpg" alt="">
+                                            <div>비비엔느 디퓨저 선물세트</div>
+                                        </a>
+                                    </div>
+                                    <div class="pages">
+                                        <ul class="row">
+                                            <li class="cell active"></li>
+                                            <li class="cell"></li>
+                                            <li class="cell"></li>
+                                            <li class="cell"></li>
+                                            <li class="cell"></li>
+                                            <li class="cell"></li>
+                                            <li class="cell"></li>
+                                            <li class="cell"></li>
+                                            <li class="cell"></li>
+                                            <li class="cell"></li>
+                                            <li class="cell"></li>
+                                            <li class="cell"></li>
+                                            <li class="cell"></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cell">
+                                <div class="img-box">
+                                    <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-right-top-bn-1.jpg" alt="">
+                                </div>
+                                <div class="slider-2 relative">
+                                    <div class="side-btns">
+                                        <div class="absolute-left">
+                                            <span><i class="fas fa-chevron-left"></i></span>
+                                        </div>
+                                        <div class="absolute-right">
+                                            <span><i class="fas fa-chevron-right"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="slides">
+                                        <a class="img-box active" href="#">
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-right-bn-1.jpg" alt="">
+                                        </a>
+                                        <a class="img-box" href="#">
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-right-bn-2.jpg" alt="">
+                                        </a>
+                                        <a class="img-box" href="#">
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-right-bn-3.jpg" alt="">
+                                        </a>
+                                        <a class="img-box" href="#">
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-right-bn-4.jpg" alt="">
+                                        </a>
+                                        <a class="img-box" href="#">
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-right-bn-5.jpg" alt="">
+                                        </a>
+                                        <a class="img-box" href="#">
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-right-bn-6.jpg" alt="">
+                                        </a>
+                                        <a class="img-box" href="#">
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-right-bn-7.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quick">
+                        <div class="icon1">
+                            <a href="#"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/right-fixed-menu-icon-1.png" alt=""></a>
+                        </div>
+                        <div class="icon2">
+                            <a href="#"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/right-fixed-menu-icon-2.png" alt=""></a>
+                        </div>
+                        <div class="icon3">
+                            <a href="#"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/right-fixed-menu-icon-3.gif" alt=""></a>
+                        </div>
+                        <div class="icon4">
+                            <span>장바구니</span>
+                            <span><a href="#">0</a></span>
+                        </div>
+                        <div class="icon5">
+                            <span>최근 본 상품</span>
+                            <br>
+                            <a href="#"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/right-fixed-menu-icon-4.gif" alt=""><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/right-fixed-menu-icon-5.gif" alt=""></a>
+                        </div>
+                        <div class="icon6">
+                            <a href="#"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/right-fixed-menu-icon-6.gif" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-2">
+                    <div class="best-menu">
+                        <div class="title title-1">Best Of Best Item</div>
+                        <ul class="row menu1">
+                            <li class="cell"><a href="#">GIFT SET /<br>PACKAGE</a></li>
+                            <li class="cell"><a href="#">BIG SIZED<br>DIFFUSER</a></li>
+                            <li class="cell"><a href="#">BEST SELLER<br>DIFFUSER</a></li>
+                            <li class="cell"><a href="#">CAR<br>DIFFUSER</a></li>
+                            <li class="cell"><a href="#">DIFFUSER<br>REFILL</a></li>
+                        </ul>
+                        <nav class="content-box">
+                            <ul class="row content active">
+                                <li class="cell">
+                                    <div class="box">
+                                        <a href="#" class="img-box">
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-2-content-1-1.jpg" alt="">
+                                        </a>
+                                        <div class="prod-name">
+                                            <a href="#">비비엔느 블랙 스톤 카네이션 디퓨저 선물 세트 (6종) 250ml</a>
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-2.gif" alt="">
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-3.gif" alt="">
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-4.gif" alt=""></div>
+                                        <div class="prod-price">
+                                            <div class="point"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-1.gif" alt="">2,080원 (5%)</div>
+                                            <div class="sale-be">48,400원</div>
+                                            <div class="sale-af">41,400원</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cell">
+                                    <div class="box">
+                                        <a href="#" class="img-box"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-2-content-1-2.jpg" alt=""></a>
+                                        <div class="prod-name">
+                                            <a href="#">비비엔느 블랙 스톤 카네이션 디퓨저 선물 세트 (6종) 250ml</a>
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-2.gif" alt="">
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-3.gif" alt="">
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-4.gif" alt=""></div>
+                                        <div class="prod-price">
+                                            <div class="point"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-1.gif" alt="">2,080원 (5%)</div>
+                                            <div class="sale-be">48,400원</div>
+                                            <div class="sale-af">41,400원</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cell">
+                                    <div class="box">
+                                        <a href="#" class="img-box"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-2-content-1-3.jpg" alt=""></a>
+                                        <div class="prod-name">
+                                            <a href="#">비비엔느 골드 라벨 카네이션 디퓨저 선물 세트 (10종) 500ml</a>
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-2.gif" alt="">
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-3.gif" alt="">
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-4.gif" alt=""></div>
+                                        <div class="prod-price">
+                                            <div class="point">
+                                                <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-1.gif" alt="">3,750원 (5%)</div>
+                                            <div class="sale-be">101,000원</div>
+                                            <div class="sale-af">75,000원</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cell">
+                                    <div class="box">
+                                        <a href="#" class="img-box"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-2-content-1-1.jpg" alt=""></a>
+                                        <div class="prod-name">
+                                            <a href="#">비비엔느 디퓨저 / 디퓨져 블랙 라벨 선물 세트 (받침대 포함)</a>
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-2.gif" alt="">
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-3.gif" alt="">
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-4.gif" alt=""></div>
+                                        <div class="prod-price">
+                                            <div class="point"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-1.gif" alt="">1,310원 (5%)</div>
+                                            <div class="sale-af">24,100원</div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="row content">
+                                <li class="cell">
+                                    <div class="box">
+                                        <a href="#" class="img-box">
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-2-content-2-1.jpg" alt="">
+                                        </a>
+                                        <div class="prod-name">
+                                            <a href="#">비비엔느 대용량 디퓨저 / 디퓨져 골드 라벨 컬렉션 (10종) 500ml</a>
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-3.gif" alt="">
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-4.gif" alt=""></div>
+                                        <div class="prod-price">
+                                            <div class="point"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-1.gif" alt="">3,450원 (5%)</div>
+                                            <div class="sale-be">95,000원</div>
+                                            <div class="sale-af">69,400원</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cell">
+                                    <div class="box">
+                                        <a href="#" class="img-box"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-2-content-2-2.jpg" alt=""></a>
+                                        <div class="prod-name">
+                                            <a href="#">비비엔느 블랙 스톤 대용량 디퓨저 / 디퓨져 (6종) 250ml</a>
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-3.gif" alt="">
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-4.gif" alt=""></div>
+                                        <div class="prod-price">
+                                            <div class="point"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-1.gif" alt="">1,750원 (5%)</div>
+                                            <div class="sale-be">45,900원</div>
+                                            <div class="sale-af">39,000원</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cell">
+                                    <div class="box">
+                                        <a href="#" class="img-box"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-2-content-2-3.jpg" alt=""></a>
+                                        <div class="prod-name">
+                                            <a href="#">비비엔느 블랙 스톤 대용량 디퓨저 / 디퓨져 (6종) 250ml</a>
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-2.gif" alt="">
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-3.gif" alt="">
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-4.gif" alt=""></div>
+                                        <div class="prod-price">
+                                            <div class="point"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-1.gif" alt="">1,100원 (5%)</div>
+                                            <div class="sale-be">35,000원</div>
+                                            <div class="sale-af">22,000원</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cell">
+                                    <div class="box"><a href="#" class="img-box"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-2-content-2-4.jpg" alt=""></a>
+                                        <div class="prod-name">
+                                            <a href="#">비비엔느 대용량 디퓨저 / 디퓨져 / 리필용 / 대형 블랙 섬유 스틱 세트 (10P/1SET, 골드 라벨용)</a>
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-6.gif" alt="">
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-1.gif" alt="">
+                                        </div>
+                                        <div class="prod-price">
+                                            <div class="point"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-1.gif" alt="">1,310원 (5%)</div>
+                                            <div class="sale-be">5,000원</div>
+                                            <div class="sale-af">5,000원</div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="row content">
+                                <li class="cell">
+                                    <div class="box">
+                                        <a href="#" class="img-box">
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-2-content-3-1.jpg" alt="">
+                                        </a>
+                                        <div class="prod-name">
+                                            <a href="#">비비엔느 대용량 디퓨저 / 디퓨져 / 라임 바질 앤 만다린 500ml</a>
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-5.gif" alt="">
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-3.gif" alt="">
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-4.gif" alt="">
+                                        </div>
+                                        <div class="prod-price">
+                                            <div class="point"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-1.gif" alt="">3,450원 (5%)</div>
+                                            <div class="sale-be">95,000원</div>
+                                            <div class="sale-af">69,000원</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cell">
+                                    <div class="box">
+                                        <a href="#" class="img-box"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-2-content-3-2.jpg" alt=""></a>
+                                        <div class="prod-name">
+                                            <a href="#">비비엔느 디퓨저 / 디퓨져 / 러브 어페어 120ml</a>
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-2.gif" alt="">
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-3.gif" alt="">
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-4.gif" alt=""></div>
+                                        <div class="prod-price">
+                                            <div class="point"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-1.gif" alt="">990원 (5%)</div>
+                                            <div class="sale-be">26,900원</div>
+                                            <div class="sale-af">19,800원</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cell">
+                                    <div class="box">
+                                        <a href="#" class="img-box"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-2-content-3-3.jpg" alt=""></a>
+                                        <div class="prod-name">
+                                            <a href="#">비비엔느 디퓨저 / 디퓨져 / 화이트 프리지아 120ml</a>
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-3.gif" alt="">
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-4.gif" alt=""></div>
+                                        <div class="prod-price">
+                                            <div class="point"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-1.gif" alt="">990원 (5%)</div>
+                                            <div class="sale-be">26,900원</div>
+                                            <div class="sale-af">19,800원</div>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li class="cell">
+                                    <div class="box">
+                                        <a href="#" class="img-box"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-2-content-3-4.jpg" alt=""></a>
+                                        <div class="prod-name">
+                                            <a href="#">비비엔느 디퓨저 / 디퓨져 / 슈가 러시 90ml</a>
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-2.gif" alt="">
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-3.gif" alt="">
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-4.gif" alt="">
+                                        </div>
+                                        <div class="prod-price">
+                                            <div class="point"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-1.gif" alt="">750원 (5%)</div>
+                                            <div class="sale-be">19,800원</div>
+                                            <div class="sale-af">14,900원</div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="row content">
+                                <li class="cell">
+                                    <div class="box">
+                                        <a href="#" class="img-box">
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-2-content-4-1.jpg" alt="">
+                                        </a>
+                                        <div class="prod-name">
+                                            <a href="#">비비엔느 차량용 / 자동차 / 방향제 / 디퓨저 / 디퓨져 / 블랙 라벨 선물 세트</a>
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-5.gif" alt="">
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-3.gif" alt="">
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-4.gif" alt="">
+                                        </div>
+                                        <div class="prod-price">
+                                            <div class="point"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-1.gif" alt="">780원 (5%)</div>
+                                            <div class="sale-af">15,600원</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cell">
+                                    <div class="box"><a href="#" class="img-box"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-2-content-4-2.jpg" alt=""></a>
+                                        <div class="prod-name">
+                                            <a href="#">비비엔느 차량용 / 자동차 / 방향제 / 디퓨저 / 디퓨져 / 클린 솝 50ml</a>
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-3.gif" alt="">
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-4.gif" alt=""></div>
+                                        <div class="prod-price">
+                                            <div class="point"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-1.gif" alt="">600원 (5%)</div>
+                                            <div class="sale-be">15,900원</div>
+                                            <div class="sale-af">11,900원</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cell">
+                                    <div class="box"><a href="#" class="img-box"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-2-content-4-3.jpg" alt=""></a>
+                                        <div class="prod-name">
+                                            <a href="#">비비엔느 차량용 / 자동차 / 방향제 / 디퓨저 / 디퓨져 / 그랑 블루 50ml</a>
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-2.gif" alt="">
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-5.gif" alt="">
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-3.gif" alt="">
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-4.gif" alt=""></div>
+                                        <div class="prod-price">
+                                            <div class="point"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-1.gif" alt="">700원 (5%)</div>
+                                            <div class="sale-be">18,900원</div>
+                                            <div class="sale-af">13,900원</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cell">
+                                    <div class="box"><a href="#" class="img-box"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-2-content-4-4.jpg" alt=""></a>
+                                        <div class="prod-name">
+                                            <a href="#">비비엔느 차량용 / 자동차 / 방향제 / 디퓨저 / 디퓨져 / 프렌치 라벤더 50ml</a>
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-5.gif" alt="">
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-3.gif" alt="">
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-4.gif" alt="">
+                                        </div>
+                                        <div class="prod-price">
+                                            <div class="point"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-1.gif" alt="">750원 (5%)</div>
+                                            <div class="sale-be">19,800원</div>
+                                            <div class="sale-af">14,900원</div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="row content">
+                                <li class="cell">
+                                    <div class="box">
+                                        <a href="#" class="img-box">
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-2-content-5-1.jpg" alt="">
+                                        </a>
+                                        <div class="prod-name">
+                                            <a href="#">비비엔느 대용량 디퓨저 / 디퓨져 리필 / 모링가 250ml</a>
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-3.gif" alt="">
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-4.gif" alt="">
+                                        </div>
+                                        <div class="prod-price">
+                                            <div class="point"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-1.gif" alt="">1,100원 (5%)</div>
+                                            <div class="sale-be">35,000원</div>
+                                            <div class="sale-af">22,000원</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cell">
+                                    <div class="box">
+                                        <a href="#" class="img-box"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-2-content-5-2.jpg" alt=""></a>
+                                        <div class="prod-name">
+                                            <a href="#">비비엔느 대용량 디퓨저 / 디퓨져 / 방향제 / 리필액 / 잉글리시 피어 앤 프리지아 500ml</a>
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-3.gif" alt="">
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-4.gif" alt="">
+                                        </div>
+                                        <div class="prod-price">
+                                            <div class="point"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-1.gif" alt="">1,950원 (5%)</div>
+                                            <div class="sale-be">53,000원</div>
+                                            <div class="sale-af">39,000원</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cell">
+                                    <div class="box">
+                                        <a href="#" class="img-box"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-2-content-5-3.jpg" alt=""></a>
+                                        <div class="prod-name">
+                                            <a href="#">비비엔느 디퓨저 / 디퓨져 / 차량용 / 자동차 / 방향제 / 리필액 / 시트러스 플로랄 210ml</a>
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-3.gif" alt="">
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-4.gif" alt="">
+                                        </div>
+                                        <div class="prod-price">
+                                            <div class="point"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-1.gif" alt="">950원 (5%)</div>
+                                            <div class="sale-be">25,500원</div>
+                                            <div class="sale-af">18,900원</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cell">
+                                    <div class="box">
+                                        <a href="#" class="img-box">
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-2-content-5-4.jpg" alt="">
+                                        </a>
+                                        <div class="prod-name">
+                                            <a href="#">비비엔느 디퓨저 / 디퓨져 / 차량용 / 자동차 / 방향제 / 리필액 / 러브 어페어 210ml</a>
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-2.gif" alt="">
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-3.gif" alt="">
+                                            <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-4.gif" alt="">
+                                        </div>
+                                        <div class="prod-price">
+                                            <div class="point"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-1.gif" alt="">1,050원 (5%)</div>
+                                            <div class="sale-be">28,500원</div>
+                                            <div class="sale-af">20,900원</div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="main-3">
+                    <div class="best-product">
+                        <div class="title title-2">Best Product</div>
+                        <ul class="row">
+                            <li class="cell">
+                                <div class="box">
+                                    <a href="#" class="img-box"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-3-content-1.jpg" alt=""></a>
+                                    <div class="prod-name">
+                                        <a href="#">비비엔느 대용량 디퓨저 / 디퓨져 / 모닝 쥬시 250ml </a>
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-2.gif" alt="">
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-5.gif" alt="">
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-3.gif" alt="">
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-4.gif" alt="">
+                                    </div>
+                                    <div class="prod-price">
+                                        <div class="point"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-1.gif" alt="">1,750원 (5%)</div>
+                                        <div class="sale-be">45,900원</div>
+                                        <div class="sale-af">35,000원</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cell">
+                                <div class="box">
+                                    <a href="#" class="img-box"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-3-content-2.jpg" alt=""></a>
+                                    <div class="prod-name">
+                                        <a href="#">비비엔느 대용량 디퓨저 / 디퓨져 / 모링가 500ml</a>
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-2.gif" alt="">
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-3.gif" alt="">
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-4.gif" alt="">
+                                    </div>
+                                    <div class="prod-price">
+                                        <div class="point"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-1.gif" alt="">3,450원 (5%)</div>
+                                        <div class="sale-be">95,000원</div>
+                                        <div class="sale-af">69,000원</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cell">
+                                <div class="box">
+                                    <a href="#" class="img-box"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-3-content-3.jpg" alt=""></a>
+                                    <div class="prod-name">
+                                        <a href="#">비비엔느 디퓨저 / 디퓨져 / 러브 어페어 120ml</a>
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-2.gif" alt="">
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-3.gif" alt="">
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-4.gif" alt="">
+                                    </div>
+                                    <div class="prod-price">
+                                        <div class="point"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-1.gif" alt="">990원 (5%)</div>
+                                        <div class="sale-be">26,900원</div>
+                                        <div class="sale-af">19,800원</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cell">
+                                <div class="box">
+                                    <a href="#" class="img-box"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-3-content-4.jpg" alt=""></a>
+                                    <div class="prod-name">
+                                        <a href="#">비비엔느 디퓨저 / 디퓨져 / 체리 블라썸 120ml</a>
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-2.gif" alt="">
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-3.gif" alt="">
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-4.gif" alt="">
+                                    </div>
+                                    <div class="prod-price">
+                                        <div class="point"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-1.gif" alt="">990원 (5%)</div>
+                                        <div class="sale-be">26,900원</div>
+                                        <div class="sale-af">19,800원</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cell">
+                                <div class="box">
+                                    <a href="#" class="img-box"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-3-content-5.jpg" alt=""></a>
+                                    <div class="prod-name">
+                                        <a href="#">비비엔느 디퓨저 / 디퓨져 / 레드 프룻 90ml</a>
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-2.gif" alt="">
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-3.gif" alt="">
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-4.gif" alt="">
+                                    </div>
+                                    <div class="prod-price">
+                                        <div class="point"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-1.gif" alt="">750원 (5%)</div>
+                                        <div class="sale-be">19,800원</div>
+                                        <div class="sale-af">14,000원</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cell">
+                                <div class="box">
+                                    <a href="#" class="img-box"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-3-content-6.jpg" alt=""></a>
+                                    <div class="prod-name">
+                                        <a href="#">비비엔느 디퓨저 / 디퓨져 / 클린 솝 90ml</a>
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-2.gif" alt="">
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-3.gif" alt="">
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-4.gif" alt="">
+                                    </div>
+                                    <div class="prod-price">
+                                        <div class="point"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-1.gif" alt="">750원 (5%)</div>
+                                        <div class="sale-be">19,800원</div>
+                                        <div class="sale-af">14,000원</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cell">
+                                <div class="box">
+                                    <a href="#" class="img-box"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-3-content-7.jpg" alt=""></a>
+                                    <div class="prod-name">
+                                        <a href="#">비비엔느 차량용 / 자동차 / 방향제 / 디퓨저 / 디퓨져 / 레드 프룻 50ml</a>
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-2.gif" alt="">
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-3.gif" alt="">
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-4.gif" alt="">
+                                    </div>
+                                    <div class="prod-price">
+                                        <div class="point"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-1.gif" alt="">600원 (5%)</div>
+                                        <div class="sale-be">15,900원</div>
+                                        <div class="sale-af">11,900원</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cell">
+                                <div class="box">
+                                    <a href="#" class="img-box"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-3-content-8.jpg" alt=""></a>
+                                    <div class="prod-name">
+                                        <a href="#">비비엔느 차량용 / 자동차 / 방향제 / 디퓨저 / 디퓨져 / 듀베리 플로랄 50ml</a>
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-2.gif" alt="">
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-3.gif" alt="">
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-4.gif" alt="">
+                                    </div>
+                                    <div class="prod-price">
+                                        <div class="point"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-1.gif" alt="">700원 (5%)</div>
+                                        <div class="sale-be">18,900원</div>
+                                        <div class="sale-af">13,900원</div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main-4">
+                    <div class="new-product">
+                        <div class="title title-3">New Product</div>
+                        <ul class="row">
+                            <li class="cell">
+                                <div class="box">
+                                    <a href="#" class="img-box"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-3-content-9.jpg" alt=""></a>
+                                    <div class="prod-name">
+                                        <a href="#">비비엔느 대용량 디퓨저 / 디퓨져 / 모닝 쥬시 250ml</a>
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-2.gif" alt="">
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-5.gif" alt="">
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-3.gif" alt="">
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-4.gif" alt="">
+                                    </div>
+                                    <div class="prod-price">
+                                        <div class="point"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-1.gif" alt="">1,750원 (5%)</div>
+                                        <div class="sale-be">45,900원</div>
+                                        <div class="sale-af">35,500원</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cell">
+                                <div class="box">
+                                    <a href="#" class="img-box"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-3-content-10.jpg" alt=""></a>
+                                    <div class="prod-name">
+                                        <a href="#">비비엔느 대용량 디퓨저 / 디퓨져 / 모링가 250ml</a>
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-5.gif" alt="">
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-3.gif" alt="">
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-4.gif" alt="">
+                                    </div>
+                                    <div class="prod-price">
+                                        <div class="point"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-1.gif" alt="">1,750원 (5%)</div>
+                                        <div class="sale-be">45,900원</div>
+                                        <div class="sale-af">35,500원</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cell">
+                                <div class="box">
+                                    <a href="#" class="img-box"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-3-content-11.jpg" alt=""></a>
+                                    <div class="prod-name">
+                                        <a href="#">비비엔느 블랙 스톤 대용량 디퓨저 / 디퓨져 / 몬스테라, 대리석 받침대 선물 세트</a>
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-2.gif" alt="">
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-5.gif" alt="">
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-3.gif" alt="">
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-4.gif" alt="">
+                                    </div>
+                                    <div class="prod-price">
+                                        <div class="point"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-1.gif" alt="">1,750원 (5%)</div>
+                                        <div class="sale-af">44,100원</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cell">
+                                <div class="box">
+                                    <a href="#" class="img-box"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-3-content-12.jpg" alt=""></a>
+                                    <div class="prod-name">
+                                        <a href="#">비비엔느 블랙 스톤 대용량 디퓨저 / 디퓨져 리필 (6종) 250ml</a>
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-5.gif" alt="">
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-3.gif" alt="">
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-4.gif" alt="">
+                                    </div>
+                                    <div class="prod-price">
+                                        <div class="point"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-1.gif" alt="">1,100원 (5%)</div>
+                                        <div class="sale-be">35,000원</div>
+                                        <div class="sale-af">22,000원</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cell">
+                                <div class="box">
+                                    <a href="#" class="img-box"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-3-content-13.jpg" alt=""></a>
+                                    <div class="prod-name">
+                                        <a href="#">비비엔느 대용량 디퓨저 / 디퓨져 / 라임 바질 앤 만다린 500ml</a>
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-5.gif" alt="">
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-3.gif" alt="">
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-4.gif" alt="">
+                                    </div>
+                                    <div class="prod-price">
+                                        <div class="point"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-1.gif" alt="">3,450원 (5%)</div>
+                                        <div class="sale-be">95,000원</div>
+                                        <div class="sale-af">69,000원</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cell">
+                                <div class="box">
+                                    <a href="#" class="img-box"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-3-content-14.jpg" alt=""></a>
+                                    <div class="prod-name">
+                                        <a href="#">비비엔느 대용량 디퓨저 / 디퓨져 / 바닐라 앤 코코넛 500ml</a>
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-5.gif" alt="">
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-3.gif" alt="">
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-4.gif" alt="">
+                                    </div>
+                                    <div class="prod-price">
+                                        <div class="point"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-1.gif" alt="">3,450원 (5%)</div>
+                                        <div class="sale-be">95,000원</div>
+                                        <div class="sale-af">69,000원</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cell">
+                                <div class="box">
+                                    <a href="#" class="img-box"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-3-content-15.jpg" alt=""></a>
+                                    <div class="prod-name">
+                                        <a href="#">비비엔느 대용량 디퓨저 / 디퓨져 골드 라벨 컬렉션 / 몬스테라 선물 세트</a>
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-2.gif" alt="">
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-5.gif" alt="">
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-3.gif" alt="">
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-4.gif" alt="">
+                                    </div>
+                                    <div class="prod-price">
+                                        <div class="point"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-1.gif" alt="">4,220원 (5%)</div>
+                                        <div class="sale-af">75,000원</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cell">
+                                <div class="box">
+                                    <a href="#" class="img-box"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-3-content-16.jpg" alt=""></a>
+                                    <div class="prod-name">
+                                        <a href="#">비엔느 대용량 디퓨저 / 디퓨져 / 방향제 / 리필액 / 골드 라벨 (10종) 500ml</a>
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-5.gif" alt="">
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-3.gif" alt="">
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-4.gif" alt="">
+                                    </div>
+                                    <div class="prod-price">
+                                        <div class="point"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-1.gif" alt="">1,950원 (5%)</div>
+                                        <div class="sale-be">53,000원</div>
+                                        <div class="sale-af">39,000원</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cell">
+                                <div class="box">
+                                    <a href="#" class="img-box"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-3-content-17.jpg" alt=""></a>
+                                    <div class="prod-name">
+                                        <a href="#">비비엔느 차량용 / 자동차 / 방향제 / 디퓨저 / 디퓨져 / 레몬 유칼립투스 50ml</a>
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-5.gif" alt="">
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-3.gif" alt="">
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-4.gif" alt="">
+                                    </div>
+                                    <div class="prod-price">
+                                        <div class="point"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-1.gif" alt="">600원 (5%)</div>
+                                        <div class="sale-be">15,900원</div>
+                                        <div class="sale-af">11,900원</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cell">
+                                <div class="box">
+                                    <a href="#" class="img-box"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-3-content-18.jpg" alt=""></a>
+                                    <div class="prod-name">
+                                        <a href="#">비비엔느 차량용 / 자동차 / 방향제 / 디퓨저 / 디퓨져 / 러브 어페어 50ml</a>
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-5.gif" alt="">
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-3.gif" alt="">
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-4.gif" alt="">
+                                    </div>
+                                    <div class="prod-price">
+                                        <div class="point"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-1.gif" alt="">700원 (5%)</div>
+                                        <div class="sale-be">18,900원</div>
+                                        <div class="sale-af">13,900원</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cell">
+                                <div class="box">
+                                    <a href="#" class="img-box"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-3-content-19.jpg" alt=""></a>
+                                    <div class="prod-name">
+                                        <a href="#">비비엔느 차량용 / 자동차 / 방향제 / 디퓨저 / 디퓨져 / 그린 티 50ml</a>
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-2.gif" alt="">
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-5.gif" alt="">
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-3.gif" alt="">
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-4.gif" alt="">
+                                    </div>
+                                    <div class="prod-price">
+                                        <div class="point"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-1.gif" alt="">700원 (5%)</div>
+                                        <div class="sale-be">18,900원</div>
+                                        <div class="sale-af">13,900원</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cell">
+                                <div class="box">
+                                    <a href="#" class="img-box"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-3-content-20.jpg" alt=""></a>
+                                    <div class="prod-name">
+                                        <a href="#">비비엔느 디퓨저 / 디퓨져 / 차량용 / 자동차 / 방향제 / 리필액 / 프리미엄 아로마 (8종) 210ml</a>
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-5.gif" alt="">
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-3.gif" alt="">
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-4.gif" alt="">
+                                    </div>
+                                    <div class="prod-price">
+                                        <div class="point"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-1.gif" alt="">950원 (5%)</div>
+                                        <div class="sale-be">25,000원</div>
+                                        <div class="sale-af">18,900원</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cell">
+                                <div class="box">
+                                    <a href="#" class="img-box"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-3-content-21.jpg" alt=""></a>
+                                    <div class="prod-name">
+                                        <a href="#">비비엔느 차량용 / 자동차 / 방향제 / 디퓨저 / 디퓨져 / 레몬 유칼립투스 50ml</a>
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-5.gif" alt="">
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-3.gif" alt="">
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-4.gif" alt="">
+                                    </div>
+                                    <div class="prod-price">
+                                        <div class="point"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-1.gif" alt="">600원 (5%)</div>
+                                        <div class="sale-be">15,900원</div>
+                                        <div class="sale-af">11,900원</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cell">
+                                <div class="box">
+                                    <a href="#" class="img-box"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-3-content-22.jpg" alt=""></a>
+                                    <div class="prod-name">
+                                        <a href="#">비비엔느 차량용 / 자동차 / 방향제 / 디퓨저 / 디퓨져 / 화이트 머스크 50ml</a>
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-5.gif" alt="">
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-3.gif" alt="">
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-4.gif" alt="">
+                                    </div>
+                                    <div class="prod-price">
+                                        <div class="point"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-1.gif" alt="">700원 (5%)</div>
+                                        <div class="sale-be">18,900원</div>
+                                        <div class="sale-af">13,900원</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cell">
+                                <div class="box">
+                                    <a href="#" class="img-box"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-3-content-23.jpg" alt=""></a>
+                                    <div class="prod-name">
+                                        <a href="#">비비엔느 차량용 / 자동차 / 방향제 / 디퓨저 / 디퓨져 / 프렌치 라벤더 50ml</a>
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-5.gif" alt="">
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-3.gif" alt="">
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-4.gif" alt="">
+                                    </div>
+                                    <div class="prod-price">
+                                        <div class="point"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-1.gif" alt="">700원 (5%)</div>
+                                        <div class="sale-be">18,900원</div>
+                                        <div class="sale-af">13,900원</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cell">
+                                <div class="box">
+                                    <a href="#" class="img-box"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-3-content-9.jpg" alt=""></a>
+                                    <div class="prod-name">
+                                        <a href="#">비비엔느 디퓨저 / 디퓨져 / 차량용 / 자동차 / 방향제 / 리필액 / 블랙 라벨 (8종) 210ml</a>
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-5.gif" alt="">
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-3.gif" alt="">
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-4.gif" alt="">
+                                    </div>
+                                    <div class="prod-price">
+                                        <div class="point"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-1.gif" alt="">1,050원 (5%)</div>
+                                        <div class="sale-be">28,500원</div>
+                                        <div class="sale-af">20,900원</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cell">
+                                <div class="box">
+                                    <a href="#" class="img-box"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-3-content-10.jpg" alt=""></a>
+                                    <div class="prod-name">
+                                        <a href="#">비비엔느 차량용 / 자동차 / 방향제 / 디퓨저 / 디퓨져 / 시트러스 플로랄 50ml</a>
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-2.gif" alt="">
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-5.gif" alt="">
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-3.gif" alt="">
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-4.gif" alt="">
+                                    </div>
+                                    <div class="prod-price">
+                                        <div class="point"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-1.gif" alt="">600원 (5%)</div>
+                                        <div class="sale-be">15,900원</div>
+                                        <div class="sale-af">11,500원</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cell">
+                                <div class="box">
+                                    <a href="#" class="img-box"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-3-content-11.jpg" alt=""></a>
+                                    <div class="prod-name">
+                                        <a href="#">비비엔느 차량용 / 자동차 / 방향제 / 디퓨저 / 디퓨져 / 그랑 블루 50ml </a>
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-2.gif" alt="">
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-5.gif" alt="">
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-3.gif" alt="">
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-4.gif" alt="">
+                                    </div>
+                                    <div class="prod-price">
+                                        <div class="point"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-1.gif" alt="">700원 (5%)</div>
+                                        <div class="sale-be">18,900원</div>
+                                        <div class="sale-af">13,900원</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cell">
+                                <div class="box">
+                                    <a href="#" class="img-box"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-3-content-12.jpg" alt=""></a>
+                                    <div class="prod-name">
+                                        <a href="#">비비엔느 차량용 / 자동차 / 방향제 / 디퓨저 / 디퓨져 / 플로랄 부케 50ml</a>
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-5.gif" alt="">
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-3.gif" alt="">
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-4.gif" alt="">
+                                    </div>
+                                    <div class="prod-price">
+                                        <div class="point"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-1.gif" alt="">700원 (5%)</div>
+                                        <div class="sale-be">18,900원</div>
+                                        <div class="sale-af">13,900원</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cell">
+                                <div class="box">
+                                    <a href="#" class="img-box"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/main-3-content-13.jpg" alt=""></a>
+                                    <div class="prod-name">
+                                        <a href="#">비비엔느 디퓨저 / 디퓨져 / 차량용 / 자동차 / 방향제 / 리필액 / 퀸즈 라벨 (6종) 210ml</a>
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-5.gif" alt="">
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-3.gif" alt="">
+                                        <img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-4.gif" alt="">
+                                    </div>
+                                    <div class="prod-price">
+                                        <div class="point"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/content-ico-1.gif" alt="">1,050원 (5%)</div>
+                                        <div class="sale-be">28,500원</div>
+                                        <div class="sale-af">20,900원</div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="footer-bn">
+                        <div class="footer-bn-content footer-bn-1"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/footer-tel.gif" alt=""></div>
+                        <div class="footer-bn-content footer-bn-2"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/footer_bank.gif" alt=""></div>
+                        <div class="footer-bn-content footer-bn-3">
+                            <h2>NOTICE</h2>
+                            <ul>
+                                <li><a href="#">ㅁ'18년 가정의 달 5월 어버이날, ...'</a></li>
+                                <li><a href="#">ㅁ비비엔느 골드 라벨 카네이션 디퓨저 ...'</a></li>
+                                <li><a href="#">ㅁ비비엔느 블랙 스톤 카네이션 디퓨저 ...'</a></li>
+                                <li><a href="#">ㅁ비비엔느 블랙 스톤 대용량 디퓨저 외 ...'</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-bn-content footer-bn-4">
+                            <ul>
+                                <li><a href="#"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/footer_banner01.gif" alt=""></a></li>
+                                <li><a href="#"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/footer-point.gif" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="inner">
+                        <div class="box">
+                            <ul class="row">
+                                <li class="cell"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/footer-mid-menu.gif" alt=""></li>
+                                <li class="cell"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/footer-bottom-copyright.gif" alt=""></li>
+                                <li class="cell"><a href="#"><img src="https://kimjinyong0908.github.io/web_pf_img/vivienne/footer-bottom-right-bn.gif" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- js 불러오기 -->
+    <script src="./common.js"></script>
+
+</body>
+
+</html>
