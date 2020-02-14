@@ -1,0 +1,948 @@
+/*  폰트 적용 */
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+html {
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+/* 위디엑스 폰트 적용 */
+@font-face {
+    font-family: 'social-icon-font';
+    src: url('//assets.squarespace.com/universal/fonts/social-20141119/social-icon-font.eot');
+    src: url('//assets.squarespace.com/universal/fonts/social-20141119/social-icon-font.eot?#iefix') format('embedded-opentype'), url('//assets.squarespace.com/universal/fonts/social-20141119/social-icon-font.woff') format('woff'), url('//assets.squarespace.com/universal/fonts/social-20141119/social-icon-font.ttf') format('truetype'), url('//assets.squarespace.com/universal/fonts/social-20141119/social-icon-font.svg#social-icon-font') format('svg');
+    font-weight: normal;
+    font-style: normal
+}
+
+/* 노말라이즈 */
+body,
+ul,
+li,
+h1 {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* 라이브러리 */
+.con {
+    margin: 0 auto;
+}
+
+.img-box > img {
+    width: 100%;
+    display: block;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.cell {
+    float: left;
+    box-sizing: border-box;
+}
+
+.cell-right {
+    float: right;
+    box-sizing: border-box;
+}
+
+.margin-0-auto {
+    margin: 0 auto;
+}
+
+.block {
+    display: block;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.line-height-0-ch-only {
+    line-height: 0;
+}
+
+.line-height-0-ch-only > * {
+    line-height: normal;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute-left {
+    position: absolute;
+    left: 0;
+}
+
+.absolute-right {
+    position: absolute;
+    right: 0;
+}
+
+.absolute-middle {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* 커스텀 */
+.con {
+    max-width: 1280px;
+}
+
+.con2 {
+    max-width: 1730px;
+}
+.con3 {
+    max-width: 1903px;
+}
+
+.page .pinterest-logo-box:hover .pinterest-logo {
+    display: block;
+}
+
+.pinterest-logo {
+    width: 45px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.page .pinterest-logo-box:hover .pinterest-logo-main {
+    display: block;
+}
+
+/* 임시 코드 */
+.pinterest-logo-main {
+    width: 45px;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    transform: translate(-20%, -10%);
+    display: none;
+}
+
+/* content 통일화 */
+/* content title 통일화 */
+.content h2 {
+    font-size: 38px;
+}
+
+/* content 텍스트 설정 시작 */
+/* content 텍스트 설정 - 글씨 설정 */
+.content > .text {
+    padding: 0 17px;
+    box-sizing: border-box;
+    /* 강제적으로 넓이를 줬고 반응형이기 때문에 max-width를 사용했습니다. */
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.content > .text p {
+    width: 100%;
+    text-align: left;
+    white-space: pre-wrap;
+    font-size: 18px;
+    color: rgba(33, 33, 33, .72);
+    word-wrap: break-word;
+    letter-spacing: .03em;
+}
+
+.content > .text a {
+    padding-bottom: .05em;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(0, 174, 239, .3);
+    color: #00aeef;
+}
+
+/* sectionline 설정 */
+.section-line {
+    width: 50%;
+    height: 1px;
+    background-color: #dfdfdf;
+    margin: 100px auto;
+}
+
+/* 콘텐츠 속 파팅라인 */
+.section-line-2 {
+    width: 100%;
+    height: 1px;
+    background-color: #dfdfdf;
+    margin: 20px auto;
+}
+
+/* page4 - page 5 사이의 짧은 파팅라인 */
+.section-line-3 {
+    width: 50%;
+    height: 1px;
+    background-color: #dfdfdf;
+    margin: 100px auto 0;
+}
+
+/* content 텍스트 설정 - 글씨 하단 버튼 */
+.content > .text-btn {
+    margin-top: 50px;
+    display: inline-block;
+}
+
+.content > .text-btn > a {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: #1e1556;
+    border: 2px solid #1e1556;
+    padding: 21px 34px;
+    margin: 0 auto;
+    transition: background-color .4s;
+}
+
+.content > .text-btn > a:hover {
+    color: #fff;
+    background-color: #1e1556;
+}
+
+/* 버튼2개 작업 */
+.content > .text-btns {
+    display: inline-block;
+    margin-top: 50px;
+}
+
+.content > .text-btns a {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: #1e1556;
+    border: 2px solid #1e1556;
+    padding: 20px 60px;
+    margin: 0 30px;
+    box-sizing: border-box;
+    transition: background-color .4s;
+}
+
+.content > .text-btns a:hover {
+    color: #fff;
+    background-color: #1e1556;
+}
+
+/* 버튼 안에 아이콘 */
+.content > .text-btns a {
+    position: relative;
+}
+
+.content > .text-btns .fas {
+    position: absolute;
+    top: 50%;
+    right: 12%;
+    transform: translatey(-50%);
+}
+
+/* 메인 시작 */
+/* page-home 배경칠하기 */
+.main-bg {
+    background-image: url("https://kimjinyong0908.github.io/web_pf_img/WDX/main-bg-2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+
+/* header 시작 */
+.inner > .header {
+    padding-top: 0px;
+}
+
+/* header - 로고 시작 */
+.header > .logo > a {
+    display: block;
+    color: #fff;
+    font-size: 27px;
+    letter-spacing: .05rem;
+    padding: 12px 10px;
+    font-weight: bold;
+}
+
+/* header - 메뉴 시작 */
+.header > .menu-box-1 > ul > li > a {
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    padding: 21px 0 0 0;
+    margin: 0 14.4px;
+}
+
+/* header - 모바일 시작 */
+
+.page .header-mobile {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* header - 모바일 시작 - 우측 로고*/
+.page .header-mobile .logo > a {
+    display: block;
+    color: #fff;
+    font-size: 24px;
+    letter-spacing: .05rem;
+    padding: 4px 10px;
+    font-weight: bold;
+}
+
+/* header - 모바일 시작 - 좌측 토글 아이콘 */
+.page .header-mobile .icon {
+    cursor: pointer;
+    display: inline-block;
+}
+
+.page .header-mobile .icon > img {
+    padding: 15px 8px;
+}
+
+/* header - 모바일 시작 - 좌측 토글 아이콘 - 메뉴시작 */
+.page .header-mobile > .left-side-bar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    width: calc(100% - 60px);
+    background-color: #e72f4b;
+    transition: left .5s;
+    z-index: 1;
+}
+
+.page .header-mobile > .left-side-bar.active {
+    left: 0;
+}
+
+.page .header-mobile > .left-side-bar > ul {
+    padding: 36px;
+}
+
+.page .header-mobile > .left-side-bar > ul > li:not(:nth-child(1)) {
+    padding-top: 10px;
+}
+
+.page .header-mobile > .left-side-bar > ul > li:nth-child(7) {
+    margin: 20px 0;
+}
+
+.page .header-mobile > .left-side-bar > ul > li > a {
+    display: block;
+    font-size: 28px;
+    color: #fff;
+}
+
+/* header - 모바일 시작 - 좌측 토글 아이콘 - 메뉴 - 우측 닫기 버튼 */
+.page .header-mobile > .delete-icon {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    opacity: 0;
+    z-index: 2;
+    transition: opacity .8s;
+}
+
+.page .header-mobile > .delete-icon.active {
+    opacity: 1;
+}
+
+.page .header-mobile > .delete-icon > .fas {
+    font-size: 30px;
+    color: #fff;
+    padding: 19.5px;
+}
+
+/* header - 모바일 시작 - 좌측 토글 아이콘 - 메뉴시작 - 우측 배경 */
+.page .header-mobile > .left-side-bar-bg {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #180d53;
+    transition: left .5s;
+}
+
+.page .header-mobile > .left-side-bar-bg.active {
+    left: 0;
+}
+
+/* header - 모바일 시작 - 하단 info-bar 시작 */
+.page .header-mobile .info-bar {
+    position: fixed;
+    background-color: #222;
+    width: 100%;
+    height: 64px;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    transform: translateY(100%);
+    transition: transform .5s;
+}
+
+html.scroll-top-0 .page .header-mobile .info-bar {
+    transform: translateY(0);
+}
+
+.page .header-mobile .info-bar ul {
+    display: inline-block;
+}
+
+.page .header-mobile .info-bar ul li {
+    height: 64px;
+    width: 100px;
+    margin: 0 50px;
+}
+
+.page .header-mobile .info-bar ul li i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: #fff;
+}
+
+.page .header-mobile .info-bar i::after {
+    content: "EMAIL";
+    position: absolute;
+    font-size: 10px;
+    bottom: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.page .header-mobile .info-bar ul li:last-child i::after {
+    content: "CALL";
+    font-weight: normal;
+}
+
+/* header - 모바일 반응형 시작 */
+@media (max-width:808px) {
+    .page .header {
+        display: none;
+    }
+
+}
+
+/* min은 809 이상일 때 실행이 됩니다. */
+@media (min-width:809px) {
+    .page .header-mobile {
+        display: none;
+    }
+}
+
+/* max은 640 이하일 때 실행이 됩니다. */
+@media (max-width:640px) {
+    .page .header-mobile {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+
+/* main-bn - 시작 */
+.inner > .main-bn {}
+
+.inner > .main-bn::after {
+    content: "";
+    display: block;
+    background-image: url(https://kimjinyong0908.github.io/web_pf_img/WDX/main-logo-2.png);
+    padding-top: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90%;
+}
+
+/* page-2 콘텐츠 */
+.page-2 {
+    margin-top: 150px;
+}
+
+/* page-3 사진 시작 */
+.page-3 .img-box {
+    margin-left: 15px;
+    margin-right: 15px;
+
+}
+
+.page-3 .img-box > img {
+
+    box-sizing: border-box;
+}
+
+/* page-4 콘텐츠 정렬 */
+/* 임시코드 - 레이아웃 정렬이 안되서 강제로 줬습니다. */
+.page-4 {
+    margin-top: 50px;
+}
+
+.page-4 > .row > .cell {
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.page-4 .text-content {
+    padding: 17px 0;
+    box-sizing: border-box;
+}
+
+/* page-5 / page-6 이미지 통일 */
+.page .logo-box {
+    margin-top: 50px;
+}
+
+.page .logo-box {
+    padding: 0 60px;
+}
+
+.page .logo-box > .img-box {
+    width: 50%;
+    padding: 0 17px;
+}
+
+/* page-6 - 사진 interaction 애니메이션 */
+.fadeinup {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: transform .5s, opacity 1s;
+}
+
+.fadeinup.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* page-6 사진 정렬
+.page-6 .logo-box {
+    margin-top:50px;
+}
+.page-6 .logo-box {
+    padding:0 60px;
+}
+.page-6 .logo-box > .img-box {
+    width:50%;
+    padding:0 17px;
+} */
+
+/* page7 ~ page10 시작 */
+/* page7 ~ page10 중앙 콘텐츠 - 텍스트 통일 시작 */
+.page > .content .strong-text {
+    font-size: 18px;
+    color: rgba(0, 174, 239, .6);
+    padding-bottom: .05em;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(0, 174, 239, .3);
+}
+
+/* page7 ~ page10 중앙 콘텐츠 -이미지 작업 */
+.page .content > .menu-box {
+    overflow: hidden;
+}
+
+.page .content > .menu-box > ul {
+    margin: 0 -10px;
+}
+
+.page .content > .menu-box > ul > li {
+    width: 25%;
+    padding: 17px;
+}
+
+.page .content > .menu-box > ul > li > .img-box {
+    display: block;
+    box-sizing: border-box;
+}
+
+/* page7 ~ page10 중앙 콘텐츠 - 이미지 배경으로 작업 */
+.page .content > .menu-box > ul > li > .img-box {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* page7 ~ page10 중앙 콘텐츠 - 이미지 배경으로 작업v2 */
+.page .content > .menu-box > ul > li > .img-box::after {
+    content: "";
+    display: block;
+    /* 16 : 9 비율 */
+    padding-top: 56.26%;
+}
+
+/* page7 ~ page10 중앙 콘텐츠 - 이미지 설명 작업 */
+.page .content > .menu-box span {
+    font-size: 20px;
+    color: rgba(33, 33, 33, 0.72);
+    display: block;
+    text-align: left;
+}
+
+/* page7 ~ page10 중앙 콘텐츠 - 이미지 밑 데이트(date)작업 */
+.page .content > .menu-box > ul > li > .date {
+    font-size: 13px;
+    color: rgba(33, 33, 33, .72);
+    text-align: left;
+    margin-top: 10px;
+}
+
+/* page11 작업 시작 */
+.page-11 {
+    margin-top: 200px;
+}
+
+/* contact - 기존 con보다 더 작음 */
+.page > .contact {
+    max-width: 775px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* contact - form-text-box시작*/
+.page > .contact .form-text-box {
+    margin: 0 0 30px;
+}
+
+.page > .contact .form-text-box:last-child {
+    margin: 0 0 -20px;
+}
+
+.page > .contact > .padding-0 {
+    padding: 0;
+
+}
+
+/* contact - form-text-box 속 라벨(title) 시작*/
+.page > .contact .form-text-box > label {
+    font-size: 18px;
+    color: rgba(33, 33, 33, .72);
+}
+
+/* contact - form-text-box 속 라벨(title)에 있는 [*]중앙 정렬시키기*/
+.page > .contact .form-text-box > label > span {
+    position: relative;
+    top: 4px;
+    background-color: blue;
+    height: 0px;
+    display: inline-block;
+}
+
+/* contact - label과 input사이에 존재하는 작은 data */
+.page > .contact .data {
+    font-size: 12px;
+    color: rgba(33, 33, 33, .72);
+    text-align: left;
+    margin-top: 10px;
+    opacity: .7;
+    padding: 4px 0;
+}
+
+/* contact - form-text-box 속 input 상자 디자인*/
+.page > .contact .form-text-box > input {
+    width: 100%;
+    padding: 12px;
+    margin: 6px 0 4px;
+    border: 1px solid #ccc;
+    background-color: #fafafa;
+    color: #222;
+    font-size: 12px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+/* contact - form-text-box 속 input 상자 디자인 - 문의 내용 크기 키우기*/
+.page > .contact .form-text-box:nth-child(2) > input {
+    padding: 12px 0 80px 12px;
+}
+
+/* content 텍스트 설정 - 글씨 하단 버튼 */
+.page > .contact > .text-btn {
+    text-align: left;
+}
+
+.page > .contact > .text-btn > a {
+    font-size: 18px;
+    font-weight: normal;
+    color: #1e1556;
+    border: 2px solid #1e1556;
+    padding: 7px 35px;
+    box-sizing: border-box;
+    transition: background-color .4s;
+    display: inline-block;
+}
+
+.page > .contact > .text-btn > a:hover {
+    color: #fff;
+    background-color: #1e1556;
+}
+
+/* page-12 시작 */
+/* 사진 배열 */
+.page-12 > .photo-box {
+    overflow: hidden;
+}
+
+.page-12 > .photo-box ul {
+    margin-left: -47px;
+    margin-right: -47px;
+}
+
+.page-12 > .photo-box li {
+    width: 33.3333%;
+    padding: 0 47px;
+    padding-top: 90px;
+}
+
+.page-12 > .photo-box li > .img-box {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page-12 > .photo-box li > .img-box::after {
+    content: "";
+    display: block;
+    padding-top: 159.53%;
+}
+
+/* 519 : 828 == 100% : 159.5375% */
+/* 828 x 100 하고 / 519 하면 뒤에 숫자 나옴 그게 비율임 */
+
+/* footer 시작 */
+/* footer - 백그라운드 색 칠하기 */
+.footer {
+    background-color: #1e1556;
+}
+
+.footer > .footer-inner .text p,
+.footer > .footer-inner > * {
+    color: #fff;
+}
+
+.footer > .footer-inner {
+    padding-top: 50px;
+    margin: 90px auto 0 auto;
+}
+
+/* footer - 상단 텍스트 정렬 */
+.footer-inner .text > p {
+    text-align: center;
+}
+
+/* footer - 상담 및 견적문의 박스 */
+.footer-inner .text-btn {
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.footer-inner .text-btn a {
+    display: block;
+    padding: 13px 26px;
+    border: 2px solid #fff;
+    font-size: 12px;
+    transition: background-color .3s;
+    color: #fff;
+}
+
+.footer-inner .text-btn:hover a {
+    color: #1e1556;
+    background-color: #fff;
+}
+
+/* footer - sns-icon 시작 */
+.footer-inner .sns-icon {
+    margin-top: 30px;
+}
+
+.footer-inner .sns-icon a {
+    display: block;
+    margin: 0 5px;
+}
+
+.footer-inner .sns-icon svg {
+    width: 50px;
+    display: block;
+}
+
+.footer-inner .sns-icon svg path {
+    fill: #fff;
+    transition: fill .3s;
+}
+
+.footer-inner .sns-icon:hover > ul > li svg path {
+    fill: rgba(255, 255, 255, .2);
+}
+
+.footer-inner .sns-icon > ul > li:hover svg path {
+    fill: #fff;
+}
+
+/* footer - email-box 시작*/
+.footer-inner .email-box {
+    margin-top: 50px;
+}
+
+.footer-inner .email-box > label {
+    font-size: 17px;
+    display: block;
+}
+
+.footer-inner .email-box > input {
+    border: 2px solid rgba(0, 0, 0, .12);
+    font-size: 15px;
+    padding: 15px 26px;
+    color: #272727;
+}
+
+.footer-inner .email-box > .text-btn > a {
+    font-size: 15px;
+}
+
+/* footer - other-links 시작 */
+.footer-inner .other-links {
+    margin-top: 50px;
+    padding-bottom: 50px;
+    overflow: hidden;
+}
+
+.footer-inner .other-links > ul {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.footer-inner .other-links > ul > li {
+    width: 25%;
+    padding: 0 10px;
+}
+
+.footer-inner .other-links > ul > li > span {
+    display: block;
+    text-align: left;
+    font-size: 18px;
+
+}
+
+.footer-inner .other-links > ul > li > span > a::before {
+    content: "\e630";
+    font-family: 'social-icon-font';
+    -webkit-font-smoothing: antialiased;
+    position: relative;
+    top: 0;
+    margin-right: 10px;
+    font-size: .7em;
+}
+
+/* page7 ~ page10 중앙 콘텐츠 - 양옆 띄어주기 */
+.page .content > .menu-box {
+    margin: 0 10px;
+}
+
+@media (min-width:1121px) {
+
+    /* page7 ~ page10 중앙 콘텐츠 - 이미지 밀리는것 방지 작업 */
+    .page .content > .menu-box > ul > li:nth-child(4n+1) {
+        clear: both;
+    }
+}
+
+
+
+@media (max-width:640px) {
+    .page .content h2 {
+        font-size: 28px;
+    }
+
+    .page-4 > .row > .cell {
+        width: 100%;
+    }
+
+    .section-line-box {
+        padding: 17px;
+    }
+
+    .page .logo-box {
+        padding: 0;
+    }
+
+    .page .logo-box > .img-box {
+        width: 100%;
+    }
+
+    .page .content > .menu-box > ul > li {
+        width: 50%;
+    }
+
+    .content > .text-btns a {
+        margin: 0 20px;
+    }
+
+    .page .content > .menu-box > ul > li:nth-child(2n+1) {
+        clear: both;
+    }
+
+    .page .contact {
+        margin: 0 20px;
+    }
+
+    .page .contact > h2 {
+        font-weight: normal;
+    }
+
+    .page-12 .photo-box > ul > li {
+        width: 100%;
+        padding-top: 30px;
+    }
+
+    .footer-inner .other-links {
+        padding-bottom: 10px;
+    }
+
+    .footer-inner .other-links > ul {
+        margin: 0 10px;
+    }
+
+    .footer-inner .other-links > ul > li {
+        width: 100%;
+        padding: 17px 0px;
+    }
+}
+
+
+@media (max-width:1120px) and (min-width:641px) {
+    .page .content > .menu-box {}
+
+    .page .content > .menu-box > ul > li {
+        width: 33.3333%;
+    }
+
+    .page .content > .menu-box > ul > li:nth-child(3n+1) {
+        clear: both;
+    }
+}
+
+@media (max-width:527px) {
+    .page .content > .menu-box > ul > li {
+        width: 100%;
+    }
+
+    .content > .text-btns .cell {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
