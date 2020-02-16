@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>위디엑스-김진용</title>
+
+    <!-- 제이쿼리 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- 스크롤리 파이 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax.js/1.5.0/parallax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.min.js"></script>
+
+    <!-- AOS라이브러리 불러오기 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- owl 캐러셀 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css" />
+
+
+    <!-- 폰트어썸 불러오기 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <!-- css 불러오기 -->
+    <!-- js 불러오기는 맨 아래에 넣어야 합니다. -->
+
+    <link rel="stylesheet" href="./common.css">
+</head>
+
+<body>
+
+    <section class="panel home" data-section-name="">
+        <div class="item item-0">
+            <div class="con-content content-box">
+                <div data-aos="fade-up" data-aos-duration="3000" class="text-box">
+                    <span class="text text-1">Drop Free Glass for<br class="only-767"> Autonomous Driving</span>
+                    <span class="text text-2">Drop Free Glass, The next-generation glass</span>
+                </div>
+            </div>
+            <div class="slider-0" data-parallax="scroll" data-speed="0" data-slider-1-autoplay-timeout="6000" data-slider-1-autoplay-current="0" data-slider-1-autoplay-status="Y">
+                <div class="slides">
+                    <div class="active">
+                        <div style="background-image:url(https://kimjinyong0908.github.io/web_pf_img/Microsystems/main-bg-1-1.jpg);"></div>
+                    </div>
+                    <div>
+                        <div style="background-image:url(https://kimjinyong0908.github.io/web_pf_img/Microsystems/main-bg-1-2.jpg);"></div>
+                    </div>
+                    <div>
+                        <div style="background-image:url(https://kimjinyong0908.github.io/web_pf_img/Microsystems/main-bg1-3.jpg);"></div>
+                    </div>
+                </div>
+                <div class="nav-bar row con-2 relative">
+                    <div class="row absolute-left">
+                        <div class="cell">
+                            <div class="progress-bar">
+                                <div></div>
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <div class="btn-play"><i class="fas fa-play"></i></div>
+                            <div class="btn-stop"><i class="fas fa-pause"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header">
+                <div class="header-top con">
+                    <a class="the-lab-box img-box" href="#"><img src="https://kimjinyong0908.github.io/web_pf_img/Microsystems/ico-lab.png" alt="" /></a>
+                    <h1 class="logo-box">
+                        <a href="#" class="logo img-box inline-block">
+                            <img src="https://kimjinyong0908.github.io/web_pf_img/Microsystems/logo-main.png" alt="" />
+                        </a>
+                    </h1>
+                    <a class="menu-all-btn" href="#" onclick="return false;">
+                        <!-- onclick사용 한 이유는 href="#"이라서 어느 페이지에서도 메뉴를 클릭하면 홈페이지 상단으로 이동하는데, 그것을 방지하기 위해서 온클릭시 이벤트를 발생안한다고 표시 -->
+                        <span class="btn-top"></span>
+                        <span class="btn-bot"></span>
+                        <span class="btn-left"></span>
+                        <span class="btn-right"></span>
+                    </a>
+                </div>
+                <div class="all-menu-wrap">
+                    <div class="all-menu-wrap_inner">
+                        <nav class="menu-box menu-box-1">
+                            <ul>
+                                <li>
+                                    <a href="#">PRODUCTS</a>
+                                    <ul>
+                                        <li><a href="#">Automotive camera</a></li>
+                                        <li><a href="#">Security camera</a></li>
+                                        <li><a href="#">Action camera</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">TECHNOLOGY</a>
+                                    <ul>
+                                        <li><a href="#">Drop Free Glass</a></li>
+                                        <li><a href="#">R&amp;D Center</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">NEWS</a>
+                                </li>
+                                <li>
+                                    <a href="#">CAREER</a>
+                                </li>
+                                <li>
+                                    <a href="#">ABOUT US</a>
+                                    <ul>
+                                        <li><a href="#">Overview</a></li>
+                                        <li><a href="#">Vision&amp;Mission</a></li>
+                                        <li><a href="#">Business</a></li>
+                                        <li><a href="#">Customer</a></li>
+                                        <li><a href="#">Location</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="all-menu-bg"></div>
+            </div>
+            <div class="container">
+                <span class="arrow-icon bounce"><i class="fas fa-chevron-down"></i></span>
+            </div>
+        </div>
+    </section>
+    <section class="panel panel1" data-section-name="">
+        <div class="item item-1">
+            <div class="background-bg" data-parallax="scroll" data-speed="0" data-image-src="https://kimjinyong0908.github.io/web_pf_img/Microsystems/main-bg-2.jpg"></div>
+            <div class="con-content content-box">
+                <div data-aos="fade-up" data-aos-duration="3000" class="text-box">
+                    <span class="text text-1 under-line">What is the problem</span>
+                    <span class="text text-2">Cameras and sensors are used as key components of an
+                        automobile<br class="only-767" />due to the expansion of autonomous driving.
+                        However, the various contaminants (rain, fog, snow, oil,
+                        dust, etc.)<br class="only-767" />generated on the surfaces cause errors in
+                        the cameras and sensors, threatening the safety of the
+                        drivers.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="panel panel2" data-section-name="">
+        <div class="item item-2">
+            <div class="background-bg" data-parallax="scroll" data-speed="0" data-image-src="https://kimjinyong0908.github.io/web_pf_img/Microsystems/main-bg-3.jpg"></div>
+            <div class="con-content content-box">
+                <div data-aos="fade-up" data-aos-duration="3000" class="text-box">
+                    <span class="text text-1 under-line">How to solve</span>
+                    <span class="text text-2">In order to resolve such problems, MICROSYSTEMS develops
+                        the world's first electronic self-cleaning Drop Free Glass
+                        (DFG)<br />that can promptly remove various contaminants on
+                        the surfaces of the cameras and sensors using a unique
+                        microfluidic technology.</span>
+                    <span class="text text-3">more +</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="panel panel3" data-section-name="">
+        <div class="item item-3">
+            <div class="background-bg" data-parallax="scroll" data-speed="0" data-image-src="https://kimjinyong0908.github.io/web_pf_img/Microsystems/main-bg-4.jpg"></div>
+            <div class="con-content content-box">
+                <div data-aos="fade-up" data-aos-duration="3000" class="text-box">
+                    <span class="text text-1 under-line">Why is Drop Free Glass</span>
+                    <span class="text text-2">Drop Free Glass (DFG) uses electric fields unlike the
+                        existing mechanical technologies; hence,<br class="only-767" />there is no
+                        need for a separate external driving device,<br class="only-767" />and
+                        various contaminants can be immediately removed with low
+                        power consumption.</span>
+                    <span class="text text-3">more +</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="panel panel4" data-section-name="">
+        <div class="item item-4">
+            <div class="background-bg" data-parallax="scroll" data-speed="0"></div>
+            <div class="con-content content-box">
+                <div data-aos="fade-up" data-aos-duration="3000" class="text-box">
+                    <span class="text text-1 under-line">What we provide</span>
+                    <span class="text text-2">Since Drop Free Glass (DFG) is easy to miniaturize under
+                        the simple structure and has low power consumption,<br />it
+                        can be applied to various products. Here are some products
+                        with Drop Free Glass.</span>
+                    <span class="text text-3">more +</span>
+                </div>
+                <div class="slider-box">
+                    <div class="slider-box-1">
+                        <div class="slides img-box">
+                            <div class="img" style="background-image:url(https://kimjinyong0908.github.io/web_pf_img/Microsystems/main-5-bn-1.png);"></div>
+                            <div class="active img" style="background-image:url(https://kimjinyong0908.github.io/web_pf_img/Microsystems/main-5-bn-2.png);"></div>
+                            <div class="img" style="background-image:url(https://kimjinyong0908.github.io/web_pf_img/Microsystems/main-5-bn-3.png);"></div>
+                        </div>
+                        <div class="side-btns">
+                            <div>
+                                <span>PREV</span>
+                            </div>
+                            <div>
+                                <span>/</span>
+                            </div>
+                            <div>
+                                <span>NEXT</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="panel panel5" data-section-name="">
+        <div class="item item-5 con-2">
+            <div class="item-5-wrap">
+                <nav class="box item-5-box">
+                    <ul class="row">
+                        <li class="cell">
+                            <h2>About Us</h2>
+                            <p class="web-text">
+                                Microsystems, Inc. is a technology-oriented
+                                enterprise that provides unique microfluidic<br class="only-1109" />technologies
+                                for autonomous driving and security industries. Drop
+                                Free Glass (DFG) is the<br class="only-1109" />world's first
+                                electronic self-cleaning glass for automotive and
+                                security camera applications.
+                            </p>
+                            <div class="youtube">
+                                <iframe src="https://www.youtube.com/embed/JEDjeQu8_mk?enablejsapi=1" frameborder="0"></iframe>
+                            </div>
+                        </li>
+                        <li class="cell">
+                            <h2>
+                                New
+                                <a href="#">more +</a>
+                            </h2>
+                            <ul>
+                                <li>
+                                    <a class="row" href="#">
+                                        <div class="pic-box cell">
+                                            <span style="background-image: url(https://kimjinyong0908.github.io/web_pf_img/Microsystems/main-6-content-1.jpg);"></span>
+                                        </div>
+                                        <div class="sub-text-box cell">
+                                            <strong class="ellipsis">CES 2020 Innovation Award
+                                            </strong>
+                                            <p>
+                                                Microsystems, Inc. received CES 2020
+                                                innovation award for<br class="only-765" />Drop Free
+                                                Glass (DFG) aided optical sensor for
+                                                autonomous<br class="only-765" />driving. You can
+                                                visit MICROSYSTEMS exhibition booth
+                                                (Sands, Hall G, 53302, Eureka Park)
+                                                during CES 2020.
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="row" href="#">
+                                        <div class="pic-box cell">
+                                            <span style="background-image: url(https://kimjinyong0908.github.io/web_pf_img/Microsystems/main-6-content-2.jpg);"></span>
+                                        </div>
+                                        <div class="sub-text-box cell">
+                                            <strong class="ellipsis">Microsystems, Inc. won the first
+                                                prize for MOBILITY in the global
+                                                startup event ComeUp 2019</strong>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="row" href="#">
+                                        <div class="pic-box cell">
+                                            <span style="background-image: url(https://kimjinyong0908.github.io/web_pf_img/Microsystems/main-6-content-3.png);"></span>
+                                        </div>
+                                        <div class="sub-text-box cell">
+                                            <strong class="ellipsis">President Moon Jae-in visits the
+                                                Microsystems, Inc. exhibition booth
+                                            </strong>
+                                            <p>
+                                                President of the Republic of Korea
+                                                Moon Jae-in visited the<br class="only-765" />Microsystems,
+                                                Inc. exhibition booth and listened
+                                                carefully<br class="only-765" />the company
+                                                technology and the product, active
+                                                self-cleaning Drop Free Glass. And
+                                                he also encouraged the members in
+                                                Microsytems, Inc. with passing along
+                                                a request for the company business
+                                                success.
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <div class="footer item item-5-1 footer-wrap">
+        <div class="con">
+            <div class="img-box">
+                <img src="https://kimjinyong0908.github.io/web_pf_img/Microsystems/logo-footer.png" alt="" />
+            </div>
+            <p class="center-text">
+                HQ and R&amp;D Center: Bldg. 17 (Rm 106), 116 Myongji-ro, Cheoin-gu,
+                Gyeonggi-do, 17058, South Korea<br />Tel: 82.31.333.1161 /Fax:
+                82.31.333.1165 /Email: contact@microsystems.co.kr
+            </p>
+            <div class="footer-right">
+                <nav class="sns-box row">
+                    <ul class="row cell-right">
+                        <li class="cell">
+                            <a href="#"><img src="https://kimjinyong0908.github.io/web_pf_img/Microsystems/ico-lab2.png" alt="" /></a>
+                        </li>
+                        <li class="cell">
+                            <a href="#"><img src="https://kimjinyong0908.github.io/web_pf_img/Microsystems/ico-insta.png" alt="" /></a>
+                        </li>
+                        <li class="cell">
+                            <a href="#"><img src="https://kimjinyong0908.github.io/web_pf_img/Microsystems/ico-ytb.png" alt="" /></a>
+                        </li>
+                        <li class="cell">
+                            <a href="#"><img src="https://kimjinyong0908.github.io/web_pf_img/Microsystems/ico-fb.png" alt="" /></a>
+                        </li>
+                    </ul>
+                </nav>
+                <p>COPYRIGHT © Microsystems, Inc. ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- js 불러오기 -->
+    <script src="./common.js"></script>
+
+</body>
+
+</html>

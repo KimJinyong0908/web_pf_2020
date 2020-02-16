@@ -1,0 +1,1271 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+html {
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+body,
+ul,
+li,
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* 라이브러리 */
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.cell {
+    float: left;
+    box-sizing: border-box;
+}
+
+.cell-right {
+    float: right;
+    box-sizing: border-box;
+}
+
+.img-box > img {
+    width: 100%;
+    display: block;
+}
+
+.margin-0-auto {
+    margin: 0 auto;
+}
+
+.block {
+    display: block;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.line-height-0-ch-only {
+    line-height: 0;
+}
+
+.line-height-0-ch-only > * {
+    line-height: normal;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute-left {
+    position: absolute;
+    left: 0;
+}
+
+.absolute-right {
+    position: absolute;
+    right: 0;
+}
+
+.absolute-middle {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+/* 커스텀 */
+.con {
+    /*max-width:1520px;*/
+    max-width: 1840px;
+    margin: 0 auto;
+}
+
+.con-2 {
+    max-width: 1520px;
+    margin: 0 auto;
+}
+
+@media (max-width:1109px) and (min-width:766px) {
+    .con {
+        max-width: 1040px;
+    }
+
+    .con-2 {
+        max-width: 1040px;
+    }
+}
+
+@media (max-width:765px) {
+    .con {
+        max-width: 750px;
+    }
+
+    .con-2 {
+        max-width: 1040px;
+    }
+}
+
+.content-box {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    z-index: auto;
+}
+
+.panel {
+    position: relative;
+}
+
+.panel > .item > .background-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+/* 페이지별 이미지 배경 작업 시작 */
+.panel > .item-4 > .background-bg {
+    background-color: #000;
+}
+
+.panel > .item-5 > .background-bg {
+    background-color: #fff;
+}
+
+/* 페이지별 이미지 배경 작업 끝 */
+
+
+/* 페이지별 텍스트 시작 */
+
+.panel > .item .text-box {
+    position: absolute;
+    top: 350px;
+    left: 5%;
+    z-index: 1;
+}
+
+@media (max-width:1109px) and (min-width:766px) {
+    .panel > .item .text-box {
+        top: 280px;
+    }
+}
+
+@media (max-width:765px) {
+    .panel > .item .text-box {
+        top: 200px;
+    }
+}
+
+.panel > .item .text-box > .text {
+    display: block;
+    color: #fff;
+}
+
+.panel > .item .text-box > .text-1 {
+    font-size: 60px;
+    font-weight: 100;
+}
+
+@media (max-width:1109px) and (min-width:766px) {
+    .panel > .item .text-box > .text-1 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width:765px) {
+    .panel > .item .text-box > .text-1 {
+        font-size: 26px;
+    }
+}
+
+.panel > .item .text-box > .text-2 {
+    font-size: 16px;
+    margin-top: 20px;
+    font-weight: 200;
+}
+
+@media (max-width:765px) {
+    .panel > .item .text-box > .text-2 {
+        font-size: 16px;
+        padding-right: 40px;
+        margin-top: 70px;
+        box-sizing: border-box;
+        color:#dfdfdf;
+    }
+
+    .panel > .item .text-box > .text-2 .only-767 {
+        display: none;
+    }
+}
+
+.panel > .item .text-box > .text-3 {
+    color: #f68d00;
+    margin-top: 70px;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.panel > .item .text-box > .under-line {
+    position: relative;
+    display: inline-block;
+}
+
+.panel > .item .text-box > .under-line::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 6px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #fff;
+    transition: width 1s 1.5s;
+}
+
+@media (max-width:765px) {
+    .panel > .item .text-box > .under-line::after {
+        bottom: 3px;
+        height: 2px;
+    }
+}
+
+/* 스크롤리 파이에 데이터 값 넣어서 그 친구 찾아서 변경해주는 방법 */
+/* 스크롤 파이시 2페이지부터 메인 글씨에 애니메이션 추가 방법 */
+html[data-under-line-index="1"] .panel1 .under-line::after {
+    width: 100% !important;
+}
+
+html[data-under-line-index="2"] .panel2 .under-line::after {
+    width: 100% !important;
+}
+
+html[data-under-line-index="3"] .panel3 .under-line::after {
+    width: 100% !important;
+}
+
+html[data-under-line-index="4"] .panel4 .under-line::after {
+    width: 100% !important;
+}
+
+/* 마지막페이지 가면 헤더가 검정색으로 변하게 만들기 */
+html[data-under-line-index="5"] .panel > .item-0 > .header,
+html[data-under-line-index="6"] .panel > .item-0 > .header {
+    background-color: #000;
+}
+
+/* 마지막페이지 가면 밑에 페이지 있다는 화살표 없애기 */
+html[data-under-line-index="5"] .panel > .item-0 > .container,
+html[data-under-line-index="6"] .panel > .item-0 > .container {
+    display: none;
+}
+
+/* 메인 1페이지 */
+/* 메인 1페이지 제목 폰트 사이즈 */
+.home > .item-0 > .content-box > div > .text-1 {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+@media (min-width:765px) {
+    .home > .item-0 > .content-box > div > .text-1 .only-767 {
+        display: none;
+    }
+}
+
+@media (max-width:765px) {
+    .home > .item-0 > .content-box > div > .text-1 {
+        font-size: 22px;
+    }
+
+    .home > .item-0 > .content-box > div > .text-1 > .only-767 {
+        display: block;
+    }
+}
+
+/* 슬라이더 배경 설정 */
+.slider-0 {
+    height: 100vh;
+    position: relative;
+}
+
+/* 슬라이더 배경 깔기 설정 */
+.slider-0 > .slides > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: opacity 1s;
+    opacity: 0;
+}
+
+.slider-0 > .slides > div.active {
+    opacity: 1;
+}
+
+.slider-0 > .slides > div > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transform: scale(1.5);
+}
+
+.slider-0 > .slides > div.active > div {
+    transform: scale(1);
+    transition: transform 3s;
+}
+
+
+
+/* 네비 시작 */
+.slider-0 .nav-bar {
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.slider-0 .nav-bar > div {
+    bottom: 75px;
+}
+
+@media (max-width:1109px) and (min-width:766px) {
+    .slider-0 .nav-bar > div {
+        bottom: 50px;
+    }
+}
+
+@media (max-width:765px) {
+    .slider-0 .nav-bar > div {
+        bottom: 30px;
+    }
+}
+
+/* 플레이버튼 누르면 사라지고 나타나고 */
+.slider-0[data-slider-1-autoplay-status="Y"] .btn-play {
+    display: none;
+}
+
+.slider-0[data-slider-1-autoplay-status="N"] .btn-stop {
+    display: none;
+}
+
+.slider-0 > .nav-bar > .row {
+    width: 100%;
+}
+
+.slider-0 > .nav-bar > .row > .cell:first-child {
+    width: calc(100% - 100px);
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+.slider-0 > .nav-bar > .row > .cell:first-child > .progress-bar {
+    background-color: rgba(255, 255, 255, .3);
+    height: 3px;
+}
+
+.slider-0 > .nav-bar > .row > .cell:first-child > .progress-bar > div {
+    height: 100%;
+    width: 0;
+    background-color: #efefef;
+}
+
+
+
+/* 플레이 / 정지 버튼 */
+.slider-0 > .nav-bar > .row > .cell:last-child {
+
+    width: 100px;
+    text-align: center;
+    color: #fff;
+}
+
+.slider-0 > .nav-bar > .row > .cell:last-child > div > i {
+    color: #fff;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, .3);
+    padding: 13px;
+    border-radius: 30px;
+    position: relative;
+    top: -22px;
+}
+
+
+
+
+/* 해더 시작 */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 98px;
+    z-index: 11;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+@media (max-width:1109px) and (min-width:766px) {
+    .header {
+        height: 80px;
+        padding: 0 5px;
+    }
+}
+
+@media (max-width:765px) {
+    .header {
+        height: 60px;
+        padding: 0 10px;
+    }
+}
+
+.header > .header-top {
+    position: relative;
+    /* 임시코드 */
+    /* 로고가 h1으로 묶여있었는데 노말라이즈 안하니깐 밀렸음 기본적으로 h1에 마진이 들어가있음 */
+    /*top:-30px;*/
+    height: 100%;
+
+}
+
+/* 해더 the-lab - 시작 */
+.header-top > .the-lab-box {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 59px;
+    display: block;
+}
+
+@media (max-width:765px) {
+    .header-top > .the-lab-box {
+        width: 40px;
+    }
+}
+
+.header-top > .the-lab-box.active {
+    opacity: 0.5;
+}
+
+/* 해더 로고 - 시작 */
+.header-top > .logo-box {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.header-top > .logo-box > .logo {
+    width: 240px;
+}
+
+@media (max-width:1109px) and (min-width:766px) {
+    .header-top > .logo-box {
+        padding-top: 20px;
+    }
+
+    .header-top > .logo-box > .logo {
+        width: 200px;
+    }
+}
+
+@media (max-width:765px) {
+    .header-top > .logo-box {
+        padding-top: 10px;
+    }
+
+    .header-top > .logo-box > .logo {
+        width: 104px;
+    }
+}
+
+.header-top > .logo-box.active > a > img {
+    opacity: 0.5;
+}
+
+
+
+/* 해더 메뉴버튼 - 시작 */
+.header-top > .menu-all-btn {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    transition: transform .3s ease-in-out;
+    z-index: 3;
+}
+
+@media (max-width:765px) {
+    .header-top > .menu-all-btn {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.header-top > .menu-all-btn > span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.header-top > .menu-all-btn > .btn-top {
+    top: 29%;
+    transition-delay: .2s;
+}
+
+.header-top > .menu-all-btn.active > .btn-top {
+    top: 0;
+    opacity: 0;
+}
+
+.header-top > .menu-all-btn > .btn-bot {
+    bottom: 29%;
+    transition-delay: .2s;
+}
+
+.header-top > .menu-all-btn.active > .btn-bot {
+    bottom: 0;
+    opacity: 0;
+}
+
+.header-top > .menu-all-btn > .btn-left {
+    left: 0;
+    width: 2px;
+    height: 100%;
+    opacity: 0;
+}
+
+.header-top > .menu-all-btn.active > .btn-left {
+    left: 29%;
+    opacity: 1;
+    transition-delay: .4s;
+}
+
+.header-top > .menu-all-btn > .btn-right {
+    left: auto;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    opacity: 0;
+}
+
+.header-top > .menu-all-btn.active > .btn-right {
+    left: auto;
+    right: 29%;
+    opacity: 1;
+    transition-delay: .4s;
+}
+
+/* all-menu-wrap 시작 */
+.all-menu-wrap {
+    position: fixed;
+    top: 0;
+    right: -640px;
+    background-color: #000;
+    width: 640px;
+    height: 100%;
+    transition: right .8s;
+    z-index: 2;
+}
+
+@media (max-width:1109px) and (min-width:766px) {
+    .all-menu-wrap {
+        width: 610px;
+        rigth: -610px;
+    }
+}
+
+@media (max-width:765px) {
+    .all-menu-wrap {
+        width: 580px;
+        rigth: -580px;
+    }
+}
+
+.all-menu-wrap.active {
+    right: 0;
+}
+
+.all-menu-wrap > .all-menu-wrap_inner {
+    box-sizing: border-box;
+    height: 100%;
+    padding: 100px 80px;
+}
+
+/* 메뉴 텍스트 컬러 통일화 */
+.all-menu-wrap .menu-box-1 a {
+    color: #fff;
+    display: block;
+}
+
+.all-menu-wrap .menu-box-1 a:hover {
+    text-decoration: underline;
+}
+
+.all-menu-wrap .menu-box-1 > ul > li {
+    margin-bottom: 40px;
+}
+
+
+/* 1차메뉴 텍스트 */
+.all-menu-wrap .menu-box-1 > ul > li > a {
+    font-weight: bold;
+    font-size: 28px;
+}
+
+/* 2차메뉴 텍스트 */
+.all-menu-wrap .menu-box-1 > ul ul {
+    margin-top: 15px;
+}
+
+.all-menu-wrap .menu-box-1 > ul ul a {
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+@media (max-width:765px) {
+    .all-menu-wrap .menu-box-1 > ul > li > a {
+        font-size: 20px;
+    }
+
+    .all-menu-wrap .menu-box-1 > ul ul a {
+        font-size: 13px;
+    }
+
+    .all-menu-wrap .menu-box-1 a:hover {
+        text-decoration: none;
+    }
+}
+
+/* all-menu-bg 메뉴 오픈시 백그라운드 설정 */
+.all-menu-bg {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 1;
+}
+
+.all-menu-bg.active {
+    display: block;
+}
+
+/* 밑으로 가는 화살표 */
+.panel > .item-0 > .container {}
+
+.arrow-icon {
+    position: fixed;
+    left: 49%;
+    bottom: 40px;
+    opacity: 1;
+    z-index: 10;
+}
+
+.arrow-icon > i {
+    color: #fff;
+    font-size: 25px;
+}
+
+.bounce {
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-10px);
+    }
+
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+@media (max-width:1109px) and (min-width:766px) {
+    .arrow-icon {
+        bottom: 30px;
+    }
+}
+
+@media (max-width:765px) {
+    .arrow-icon {
+        bottom: 20px;
+    }
+
+    .arrow-icon > i {
+        font-size: 15px;
+    }
+}
+
+
+
+/* 메인 4페이지 시작 */
+.item-4 {}
+
+.slider-box {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 969px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.slider-box-1 > .img-box > .img {
+    display: block;
+    width: 100%;
+}
+
+.slider-box-1 {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    height: 684px;
+    margin: 0 auto;
+}
+
+
+.slider-box-1 > .side-btns {
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translateY(-50%);
+    z-index: 5;
+    user-select: none;
+}
+
+.slider-box-1 > .side-btns > div {
+    color: #999;
+    writing-mode: vertical-rl;
+    font-size: 16px;
+    letter-spacing: 2px;
+    transition: color .3s;
+    cursor: pointer;
+}
+
+.slider-box-1 > .side-btns > div:hover:not(:nth-child(2)) {
+    color: #fff;
+}
+
+.slider-box-1 > .side-btns > div:first-child {
+    margin-bottom: 15px;
+}
+
+.slider-box-1 > .side-btns > div:first-child::before {
+    content: "<";
+    padding-bottom: 10px;
+}
+
+.slider-box-1 > .side-btns > div:last-child {
+    margin-top: 15px;
+}
+
+.slider-box-1 > .side-btns > div:last-child::after {
+    content: ">";
+    padding-top: 10px;
+}
+
+.slider-box-1 > .slides > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.slider-box-1 > .slides > div.active {
+    z-index: 1;
+}
+
+@media (max-width:765px) {
+    .slider-box {
+        top: 450px;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 590px;
+    }
+
+    .slider-box-1 {
+        top: 50%;
+        left: 0%;
+        transform: translateY(-50%);
+        width: 100%;
+        height: 350px;
+        margin: 0 auto;
+    }
+
+    .slider-box-1 > .side-btns {
+        left:95%;
+    }
+
+    .slider-box-1 > .side-btns > div {
+        font-size: 13px;
+    }
+}
+
+
+
+
+
+/* 메인 5페이지(footer) 시작 */
+.panel5 > .item-5 {
+    padding-top: 200px;
+}
+
+@media (max-width:1109px) {
+    .panel5 > .item-5 {
+        padding-top: 150px;
+    }
+}
+
+@media (max-width:765px) {
+    .panel5 > .item-5 {
+        padding-top: 100px;
+    }
+}
+
+/* About us / New 각 문단 시작 */
+.panel5 .item-5-wrap {
+    display: block;
+    padding: 0 10px;
+}
+
+.panel5 .item-5-wrap > .item-5-box > ul {}
+
+.panel5 .item-5-wrap > .item-5-box > ul > li {
+    width: 50%;
+}
+
+
+.panel5 .item-5-wrap > .item-5-box > ul > li:first-child {
+    padding-right: 60px;
+}
+
+.panel5 .item-5-wrap > .item-5-box > ul > li:last-child {
+    padding-left: 60px;
+}
+
+@media (max-width:1109px) {
+    .panel5 .item-5-wrap > .item-5-box > ul > li {
+        width: 100%;
+    }
+
+    .panel5 .item-5-wrap > .item-5-box > ul > li:first-child {
+        padding-right: 0px;
+    }
+
+    .panel5 .item-5-wrap > .item-5-box > ul > li:last-child {
+        padding-left: 0px;
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+}
+
+@media (max-width:765px) {
+    .panel5 .item-5-wrap > .item-5-box > ul > li:last-child > h2::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        margin-left: -50vw;
+        background-color: #f6f6f6;
+        height: 20px;
+        width: 100vw;
+
+
+    }
+}
+
+/* abtou us 유튜브 영상 시작 */
+.panel5 .item-5-wrap > .item-5-box > ul > li > div {
+    margin-top: 40px;
+}
+
+@media (max-width:765px) {
+    .panel5 .item-5-wrap > .item-5-box > ul > li > div {
+        margin-top: 15px;
+    }
+}
+
+.panel5 .item-5-wrap > .item-5-box > ul > li > div > iframe {
+    width: 100%;
+    height: 398px;
+}
+
+@media (max-width:1109px) and (min-width:766px) {
+    .panel5 .item-5-wrap > .item-5-box > ul > li > div > iframe {
+        height: 600px;
+    }
+}
+
+@media (max-width:765px) {
+    .panel5 .item-5-wrap > .item-5-box > ul > li > div > iframe {
+        height: 398px;
+    }
+}
+
+.panel5 > .item-5 .item-5-box > ul > li:last-child > ul {
+    margin-top: 40px;
+}
+
+.panel5 > .item-5 .item-5-box > ul > li:last-child > ul > li {
+    margin-top: 15px;
+}
+
+.panel5 > .item-5 .item-5-box > ul > li:last-child > ul > li > a {
+    display: block;
+    width: 100%;
+}
+
+.panel5 > .item-5 .item-5-box > ul > li:last-child > ul > li > a > .cell:first-child {
+    width: 30%;
+}
+
+@media (max-width:765px) {
+    .panel5 > .item-5 .item-5-box > ul > li:last-child > ul > li > a > .cell:first-child {
+        display: none;
+    }
+}
+
+.panel5 > .item-5 .item-5-box > ul > li:last-child > ul > li > a > .cell:last-child {
+    width: 70%;
+}
+
+@media (max-width:765px) {
+    .panel5 > .item-5 .item-5-box > ul > li:last-child > ul > li > a > .cell:last-child {
+        width: 100%;
+    }
+}
+
+.panel5 > .item-5 .pic-box {
+    height: 160px;
+    background-color: #dfdfdf;
+}
+
+.panel5 > .item-5 .pic-box {
+    overflow: hidden;
+}
+
+.panel5 > .item-5 .pic-box > span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    transition: transform .5s;
+}
+
+@media (max-width:765px) {
+    .panel5 > .item-5 .pic-box > span {
+        display: none;
+    }
+}
+
+.panel5 > .item-5 .item-5-box > ul > li:last-child > ul > li > a:hover > .pic-box > span {
+    transform: scale(1.2);
+}
+
+
+
+/* 텍스트 설정 시작 */
+/* About us / New 시작 */
+.panel5 .item-5-wrap h2 {
+    font-size: 26px;
+    color: #333;
+    font-weight: 900;
+}
+
+@media (max-width:765px) {
+    .panel5 .item-5-wrap h2 {
+        font-size: 14px;
+    }
+}
+
+/* abtou us 보조설명 시작 */
+.panel5 .item-5-wrap > .item-5-box > ul > li > p {
+    display: block;
+    margin-top: 40px;
+    font-size: 16px;
+    font-weight: 100;
+    color: #646464;
+}
+
+@media (min-width:1110px) {
+    .panel5 .item-5-wrap > .item-5-box > ul > li > .web-text > .only-1109 {
+        display: block;
+    }
+}
+
+@media (max-width:1109px) {
+    .panel5 .item-5-wrap > .item-5-box > ul > li > .web-text > .only-1109 {
+        display: none;
+    }
+}
+
+@media (max-width:765px) {
+    .panel5 .item-5-wrap > .item-5-box > ul > li > .web-text {
+        display: none;
+    }
+}
+
+/* 2분단 strong 텍스트 시작 */
+.panel5 > .item-5 .sub-text-box {
+    padding: 20px 0 0 40px;
+}
+
+.panel5 > .item-5 .item-5-box > ul > li:last-child > ul > li:nth-child(2) > a > .sub-text-box {
+    padding-top: 70px;
+}
+
+@media (max-width:765px) {
+    .panel5 > .item-5 .item-5-box > ul > li:last-child > ul > li:nth-child(2) > a > .sub-text-box {
+        padding-top: 0px;
+    }
+}
+
+.panel5 > .item-5 .sub-text-box > strong {
+    display: block;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+@media (max-width:765px) {
+    .panel5 > .item-5 .sub-text-box > strong {
+        font-size: 13px;
+    }
+}
+
+.ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* 2분단 보조 설명 텍스트 시작 */
+.panel5 > .item-5 .sub-text-box > p {
+    font-size: 14px;
+    line-height: 23px;
+    color: #646464;
+    margin-top: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 69px;
+    word-wrap: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+@media (max-width:765px) {
+    .panel5 > .item-5 .sub-text-box > p {
+        font-size: 11px;
+    }
+
+    .panel5 > .item-5 .sub-text-box > p > .only-765 {
+        display: none;
+    }
+}
+
+/* more+ 시작 */
+.panel5 .item-5-wrap > .item-5-box > ul > li:nth-child(2) > h2 {
+    position: relative;
+}
+
+.panel5 .item-5-wrap > .item-5-box > ul > li:nth-child(2) > h2 > a {
+    display: block;
+    font-size: 14px;
+    color: #999;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-bottom: 1px;
+}
+
+.panel5 .item-5-wrap > .item-5-box > ul > li:nth-child(2) > h2 > a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #999;
+}
+
+
+/* 풋터 시작 */
+.panel5 {
+    position: relative;
+}
+
+.footer {
+    background-color: #000;
+    height: 100%;
+    width: 100%;
+    padding: 59px 50px;
+    box-sizing: border-box;
+}
+
+.footer > .con {
+    height: 100%;
+    position: relative;
+
+}
+
+.footer > .con > .img-box {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 328px;
+}
+
+.footer > .con > .center-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.footer > .con > .footer-right {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.footer > .con > .footer-right > p {
+    margin: 0;
+}
+
+
+/* footer 텍스트 시작 */
+.footer > .con p {
+    font-size: 14px;
+    color: #999;
+}
+
+@media (max-width:1499px) and (min-width:1110px) {
+    .footer > .con > .center-text {
+        position: inherit;
+        top: 0;
+        left: 0;
+        transform: inherit;
+
+    }
+
+    .footer > .con > .img-box {
+        position: inherit;
+        top: 0;
+        left: 0;
+        transform: inherit;
+    }
+
+    .footer > .con > .footer-right {
+        top: auto;
+        bottom: 0;
+        right: 0;
+        transform: inherit;
+    }
+}
+
+@media (max-width:1109px) {
+    .footer > .con {
+        text-align: center;
+    }
+
+    .footer > .con > .center-text {
+        display: block;
+        position: inherit;
+        top: 0;
+        left: 0;
+        transform: inherit;
+
+    }
+
+    .footer > .con > .img-box {
+        display: inline-block;
+        position: inherit;
+        top: 0;
+        left: 0;
+        transform: inherit;
+    }
+
+    .footer > .con > .footer-right > .sns-box {
+        display: inline-block;
+    }
+
+    .footer > .con > .footer-right {
+        position: inherit;
+        transform: inherit;
+    }
+}
+
+@media (max-width:775px) {
+    .footer > .con p {
+        font-size: 11px;
+    }
+
+    .footer > .con > .img-box {
+        width: 196px;
+    }
+
+    .footer > .con > .footer-right {
+        padding-top: 30px;
+    }
+}
