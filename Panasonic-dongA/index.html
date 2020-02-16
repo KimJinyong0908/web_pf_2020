@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>WINIX-김진용</title>
+
+    <!-- 모바일에서 화면배율을 디바이스 크기 기준으로 설정 -->
+    <!-- 이게 안되면 pc에서의 100px과 모바일에서의 100px이 디바이스 성능에 따라 달라집니다. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- 제이쿼리 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- slick불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+
+    <!-- aos 불러오기 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- XEicon 아이콘 불러오기 -->
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+    <!-- 폰트어썸 불러오기 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <!-- css 불러오기 -->
+    <!-- js 불러오기는 맨 아래에 넣어야 합니다. -->
+    <link rel="stylesheet" href="./common.css">
+</head>
+
+<body>
+    <div class="header main">
+        <div class="container">
+            <div class="inner-container con row">
+                <div class="logo-box">
+                    <a href="#" class="img-box">
+                        <img src="https://kimjinyong0908.github.io/web_pf_img/Panasonic/logo.png" alt="">
+                    </a>
+                </div>
+                <nav class="menu-box row cell-right">
+                    <ul class="row">
+                        <li class="cell menu-item first-menu-item"><a href="#"><span class="menu-text first-menu-text">제품소개</span></a>
+                            <ul class="sec-menu-line">
+                                <li class="menu-item sec-menu-item"><a href="#" class="menu-text sec-menu-text">배선기구</a></li>
+                                <li class="menu-item sec-menu-item"><a href="#" class="menu-text sec-menu-text">스마트 배선기구</a></li>
+                                <li class="menu-item sec-menu-item"><a href="#" class="menu-text sec-menu-text">계전기&amp;분전반</a></li>
+                                <li class="menu-item sec-menu-item"><a href="#" class="menu-text sec-menu-text">시장용품</a></li>
+                                <li class="menu-item sec-menu-item"><a href="#" class="menu-text sec-menu-text">케이뮤(KMEW)</a></li>
+                                <li class="menu-item sec-menu-item"><a href="#" class="menu-text sec-menu-text">복지용구(Age Free)</a></li>
+                                <li class="menu-item sec-menu-item"><a href="#" class="menu-text sec-menu-text">조명제어시스템</a></li>
+                            </ul>
+                        </li>
+                        <li class="cell menu-item first-menu-item"><a href="#"><span class="menu-text first-menu-text">자료실</span></a>
+                            <ul class="sec-menu-line">
+                                <li class="menu-item sec-menu-item"><a href="#" class="menu-text sec-menu-text">인증서</a></li>
+                                <li class="menu-item sec-menu-item"><a href="#" class="menu-text sec-menu-text">수상경력</a></li>
+                                <li class="menu-item sec-menu-item"><a href="#" class="menu-text sec-menu-text">뉴스</a></li>
+                            </ul>
+                        </li>
+                        <li class="cell menu-item first-menu-item"><a href="#"><span class="menu-text first-menu-text">회사소개</span></a>
+                            <ul class="sec-menu-line">
+                                <li class="menu-item sec-menu-item"><a href="#" class="menu-text sec-menu-text">CEO 소개</a></li>
+                                <li class="menu-item sec-menu-item"><a href="#" class="menu-text sec-menu-text">회사 비전</a></li>
+                                <li class="menu-item sec-menu-item"><a href="#" class="menu-text sec-menu-text">회사 연혁</a></li>
+                                <li class="menu-item sec-menu-item"><a href="#" class="menu-text sec-menu-text">환경활동</a></li>
+                                <li class="menu-item sec-menu-item"><a href="#" class="menu-text sec-menu-text">오시는 길</a></li>
+                            </ul>
+                        </li>
+                        <li class="cell menu-item first-menu-item"><a href="#"><span class="menu-text first-menu-text">고객지원</span></a></li>
+                        <li class="cell menu-item first-menu-item"><a href="#"><span class="menu-text first-menu-text ico-text ico-korea">한국어</span></a></li>
+                        <li class="cell menu-item first-menu-item">
+                            <a href="#"><span class="menu-text first-menu-text ico-text ico-search">검색</span></a>
+                            <div class="search-box">
+                                <div class="inner-search">
+                                    <input type="text" placeholder="검색해주세요.">
+                                    <span class="search-icon"><i class="fas fa-search"></i></span>
+                                </div>
+                                <span class="arrow-icon"><i class="fas fa-caret-up"></i></span>
+                            </div>
+                        </li>
+                        <li class="cell menu-item first-menu-item"><a href="#"><span class="menu-text first-menu-text ico-text ico-global">Panasonic Global</span></a></li>
+                        <li class="cell menu-item first-menu-item mobile-menu-item"><a href="#"><span class="menu-text first-menu-text ico-text ico-korea">한국어</span></a></li>
+                        <li class="cell menu-item first-menu-item mobile-menu-item">
+                            <a href="#"><span class="menu-text first-menu-text ico-text ico-search">검색</span></a>
+                            <div class="search-box">
+                                <div class="inner-search">
+                                    <input type="text" placeholder="검색해주세요.">
+                                    <span class="search-icon"><i class="fas fa-search"></i></span>
+                                </div>
+                                <span class="arrow-icon"><i class="fas fa-caret-up"></i></span>
+                            </div>
+                        </li>
+                        <li class="cell menu-item first-menu-item mobile-menu-item ico toggle-side-bar-btn">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </li>
+                        <div class="cell menu-item mobile-menu-item right-side-bar-box">
+                            <div class="right-side-bar">
+                                <div class="menu-1">
+                                    <ul>
+                                        <li>
+                                            <a class="title" href="#">제품소개</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">배선기구</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">스마트 배선기구</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">계전기&amp;분전반</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">시장용품</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">케이뮤(KMEW)</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">복지용구(AGE FREE)</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">조명제어시스템</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a class="title" href="#">자료실</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">인증서</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">수상경력</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">뉴스</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a class="title" href="#">회사소개</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">CEO 소개</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">회사 비전</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">회사 연혁</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">환경활동</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">오시는 길</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a class="title" href="#">고객지원</a>
+                                        </li>
+                                        <li>
+                                            <a class="title" href="#">PANASONIC GLOBAL</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="right-side-bar-bg"></div>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="main main-0">
+        <div class="container">
+            <div class="inner-container con">
+                <section class="visual main-1">
+                    <div class="item item-1">
+                        <div class="img-box slider-bg web-bg">
+                            <img src="https://kimjinyong0908.github.io/web_pf_img/Panasonic/main-slide-1.jpg" alt="">
+                        </div>
+                        <div class="img-box slider-bg mobile-bg">
+                            <img src="https://kimjinyong0908.github.io/web_pf_img/Panasonic/main-slide-1-M.jpg" alt="">
+                        </div>
+                        <div class="text-box">
+                            <strong class="text text1">A Better Life,<br>A Better World</strong>
+                            <p class="text text2">더 나은 생활을 발견하다.<br>파나소닉신동아의 고민은 늘 “고객의 라이프 스타일”을 향하고,<br>“A Better Life”의 창조를 실현합니다.</p>
+                        </div>
+                    </div>
+                    <div class="item item-2">
+                        <div class="img-box slider-bg web-bg">
+                            <img src="https://kimjinyong0908.github.io/web_pf_img/Panasonic/main-slide-2.jpg" alt="">
+                        </div>
+                        <div class="img-box slider-bg mobile-bg">
+                            <img src="https://kimjinyong0908.github.io/web_pf_img/Panasonic/main-slide-2-M.jpg" alt="">
+                        </div>
+                        <div class="img-box main-img">
+                            <img src="https://kimjinyong0908.github.io/web_pf_img/Panasonic/main-slide-2-pic.png" alt="">
+                        </div>
+                        <div class="text-box">
+                            <strong class="text text1">Simple is the Best<br>Flatima</strong>
+                            <p class="text text2">최소한의 디자인으로 찾아낸 최고의 분위기<br>어떠한 공간도 고급스럽게 만들어주는 플래티마를 만나보세요.</p>
+                            <p class="text text3"><a href="#">RED MORE</a></p>
+                        </div>
+                    </div>
+                    <div class="item item-3">
+                        <div class="img-box slider-bg web-bg">
+                            <img src="https://kimjinyong0908.github.io/web_pf_img/Panasonic/main-slide-3.jpg" alt="">
+                        </div>
+                        <div class="img-box slider-bg mobile-bg">
+                            <img src="https://kimjinyong0908.github.io/web_pf_img/Panasonic/main-slide-3-M.jpg" alt="">
+                        </div>
+                        <div class="img-box main-img">
+                            <img src="https://kimjinyong0908.github.io/web_pf_img/Panasonic/main-slide-3-pic.png" alt="">
+                        </div>
+                        <div class="text-box">
+                            <p class="text text0">우리집에 소소하지만 특별한 변화를!</p>
+                            <strong class="text text1">PIONE</strong>
+                            <p class="text text2">부드러운 실루엣과 세련된 모습으로 사랑받고 있는 피오네가<br>모두에게 따뜻한 감성을 전합니다.<br>파나소닉 모듈이 적용된 PUSH on/off 스위치로 극한의 부드러움을 스위칭을 경험하세요.</p>
+                            <p class="text text3"><a href="#">RED MORE</a></p>
+                        </div>
+                    </div>
+                    <div class="item item-4">
+                        <div class="img-box slider-bg web-bg">
+                            <img src="https://kimjinyong0908.github.io/web_pf_img/Panasonic/main-slide-4.jpg" alt="">
+                        </div>
+                        <div class="img-box slider-bg mobile-bg">
+                            <img src="https://kimjinyong0908.github.io/web_pf_img/Panasonic/main-slide-4-M.jpg" alt="">
+                        </div>
+                        <div class="img-box main-img">
+                            <img src="https://kimjinyong0908.github.io/web_pf_img/Panasonic/main-slide-4-pic.png" alt="">
+                        </div>
+                        <div class="text-box">
+                            <p class="text text0">신뢰할 수 있는 기술력, 그리고 심플한 디자인</p>
+                            <strong class="text text1">계전기&amp;분전반</strong>
+                            <p class="text text2">모두가 기다리는 라이프스타일의 새로운 변화<br>파나소닉 신동아라면 가능합니다.<br>아낌없는 투자와 지속적인 연구개발로 산업기기 제품의 끊임없는 성장을 실현합니다.</p>
+                            <p class="text text3"><a href="#">RED MORE</a></p>
+                        </div>
+                    </div>
+                </section>
+                <nav class="search-wrap">
+                    <ul class="row">
+                        <li class="cell search-box search-box-1">
+                            <a href="#">
+                                <span class="text search-text">Product</span>
+                                <i class="xi-angle-down-min"></i>
+                            </a>
+                        </li>
+                        <li class="cell search-box search-box-2">
+                            <a href="#">
+                                <span class="text search-text">Solution</span>
+                                <i class="xi-angle-down-min"></i>
+                            </a>
+                        </li>
+                        <li class="cell search-box search-box-3">
+                            <a href="#">
+                                <span class="text search-text">Item</span>
+                                <i class="xi-angle-down-min"></i>
+                            </a>
+                        </li>
+                        <li class="cell search-box search-box-4">
+                            <a href="#">
+                                <span class="text search-text">SEARCH</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="scroll-down-wrap">
+                    <div class="scroll-down"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box-1 con">
+        <div class="row active-on-visible" data-active-on-visible-delay="200">
+            <div class="cell">
+                <div class="img-box">
+                    <img class="pic" src="https://kimjinyong0908.github.io/web_pf_img/Panasonic/main-1-1.jpg" alt="">
+                    <img class="only-767-pic" src="https://kimjinyong0908.github.io/web_pf_img/Panasonic/main-1-1-M.jpg" alt="">
+                </div>
+            </div>
+            <div class="cell">
+                <div class="content-text-box" data-aos="zoom-in" data-aos-duration="1000">
+                    <h2>우리는 언제나<br><strong>고객과 비지니스 파트너</strong>를 향합니다.</h2>
+                    <p>파나소닉 동아는 늘 고객의 입장에서 제품을 바라보고<br>더 높은 안전성과 더 편리한 사용성, 더 나은 디자인으로 개발하기 위해 노력합니다.</p>
+                    <div class="content-btn-wrap">
+                        <a href="#" class="download">2019 카타로그 다운로드</a>
+                        <a href="#" class="download">공사용 승인원 다운로드</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main main-2 active-on-visible" data-active-on-visible-delay="200">
+        <div class="container">
+            <div class="inner-container con main-2-wrap">
+                <nav class="menu-box main-2-box">
+                    <ul class="row">
+                        <li class="cell">
+                            <div class="box">
+                                <div class="img-box">
+                                    <img src="https://kimjinyong0908.github.io/web_pf_img/Panasonic/main-2-1.jpg" alt="">
+
+                                </div>
+                                <h2 class="main-2-text">PRODUCT</h2>
+                            </div>
+
+                        </li>
+                        <li class="cell" data-aos="fade-up" data-aos-duration="400" data-aos-delay="100">
+                            <div class="box">
+                                <div class="img-box"><img src="https://kimjinyong0908.github.io/web_pf_img/Panasonic/main-2-2.jpg" alt=""></div>
+                                <p class="main-2-text">WIRING DEVICE<br><strong>배선기구</strong></p>
+                            </div>
+
+                        </li>
+                        <li class="cell" data-aos="fade-up" data-aos-duration="400" data-aos-delay="150">
+                            <div class="box">
+                                <div class="img-box"><img src="https://kimjinyong0908.github.io/web_pf_img/Panasonic/main-2-3.jpg" alt=""></div>
+                                <p class="main-2-text">SMART WIRING DEVICE<br><strong>스마트 배선기구</strong></p>
+                            </div>
+
+                        </li>
+                        <li class="cell" data-aos="fade-up" data-aos-duration="400" data-aos-delay="200">
+                            <div class="box">
+                                <div class="img-box"><img src="https://kimjinyong0908.github.io/web_pf_img/Panasonic/main-2-4.jpg" alt=""></div>
+                                <p class="main-2-text">RELAY&amp;DISTRIBUTION BOARD<br><strong>계전기&amp;분전반</strong></p>
+                            </div>
+
+                        </li>
+                        <li class="cell" data-aos="fade-up" data-aos-duration="400" data-aos-delay="250">
+                            <div class="box">
+                                <div class="img-box"><img src="https://kimjinyong0908.github.io/web_pf_img/Panasonic/main-2-5.jpg" alt=""></div>
+                                <p class="main-2-text">MARKET PRODUCTS<br><strong>시장용품</strong></p>
+                            </div>
+
+                        </li>
+                        <li class="cell" data-aos="fade-up" data-aos-duration="400" data-aos-delay="300">
+                            <div class="box">
+                                <div class="img-box"><img src="https://kimjinyong0908.github.io/web_pf_img/Panasonic/main-2-6.jpg" alt=""></div>
+                                <p class="main-2-text">EXTERNAL MATERIAL<br><strong>케이뮤(KMEW)</strong></p>
+                            </div>
+
+                        </li>
+                        <li class="cell" data-aos="fade-up" data-aos-duration="400" data-aos-delay="350">
+                            <div class="box">
+                                <div class="img-box"><img src="https://kimjinyong0908.github.io/web_pf_img/Panasonic/main-2-7.jpg" alt=""></div>
+                                <p class="main-2-text">MEDICARE PRODUCTS<br><strong>복지용구(Age Free)</strong></p>
+                            </div>
+
+                        </li>
+                        <li class="cell" data-aos="fade-up" data-aos-duration="400" data-aos-delay="400">
+                            <div class="box">
+                                <div class="img-box"><img src="https://kimjinyong0908.github.io/web_pf_img/Panasonic/main-2-8.jpg" alt=""></div>
+                                <p class="main-2-text">LIGHTING CONTROL SYSTEM<br><strong>조명제어시스템</strong></p>
+                            </div>
+
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="main main-3">
+        <div class="container">
+            <div class="inner-container con">
+                <div class="main-3-title">
+                    <h2>
+                        <div class="title-1">원하는 제품을 찾아 나만의 라이프 스타일을 완성해보세요!</div>
+                        <div class="title-2">RECOMMEND PRODUCTS</div>
+                    </h2>
+                </div>
+                <section class="visual-1 main-1">
+                    <div class="item item-1">
+                        <div class="img-box slider-bg">
+                            <img src="https://kimjinyong0908.github.io/web_pf_img/Panasonic/main-3-1.png" alt="">
+                        </div>
+                        <div class="text-box">
+                            <strong class="text text1">플래티마</strong>
+                            <p class="text text2">단로스위치 1구</p>
+                        </div>
+                    </div>
+                    <div class="item item-2">
+                        <div class="img-box slider-bg">
+                            <img src="https://kimjinyong0908.github.io/web_pf_img/Panasonic/main-3-2.png" alt="">
+                        </div>
+                        <div class="text-box">
+                            <strong class="text text1">피오네</strong>
+                            <p class="text text2">단로스위치 1구</p>
+                        </div>
+                    </div>
+                    <div class="item item-3">
+                        <div class="img-box slider-bg">
+                            <img src="https://kimjinyong0908.github.io/web_pf_img/Panasonic/main-3-3.png" alt="">
+                        </div>
+                        <div class="text-box">
+                            <strong class="text text1">히어로</strong>
+                            <p class="text text2">단로스위치 1구</p>
+                        </div>
+                    </div>
+                    <div class="item item-4">
+                        <div class="img-box slider-bg">
+                            <img src="https://kimjinyong0908.github.io/web_pf_img/Panasonic/main-3-4.png" alt="">
+                        </div>
+                        <div class="text-box">
+                            <strong class="text text1">아르체</strong>
+                            <p class="text text2">[아르체S] 단로스위치 2구</p>
+                        </div>
+                    </div>
+                    <div class="item item-5">
+                        <div class="img-box slider-bg">
+                            <img src="https://kimjinyong0908.github.io/web_pf_img/Panasonic/main-3-5.png" alt="">
+                        </div>
+                        <div class="text-box">
+                            <strong class="text text1">아르체</strong>
+                            <p class="text text2">[아르체L] 단로스위치 2구</p>
+                        </div>
+                    </div>
+                    <div class="item item-6">
+                        <div class="img-box slider-bg">
+                            <img src="https://kimjinyong0908.github.io/web_pf_img/Panasonic/main-3-6.png" alt="">
+                        </div>
+                        <div class="text-box">
+                            <strong class="text text1">파르테논</strong>
+                            <p class="text text2">단로스위치 1구</p>
+                        </div>
+                    </div>
+                    <div class="item item-7">
+                        <div class="img-box slider-bg">
+                            <img src="https://kimjinyong0908.github.io/web_pf_img/Panasonic/main-3-7.png" alt="">
+                        </div>
+                        <div class="text-box">
+                            <strong class="text text1">리젠</strong>
+                            <p class="text text2">단로스위치 1구</p>
+                        </div>
+                    </div>
+                    <div class="item item-8">
+                        <div class="img-box slider-bg">
+                            <img src="https://kimjinyong0908.github.io/web_pf_img/Panasonic/main-3-8.png" alt="">
+                        </div>
+                        <div class="text-box">
+                            <strong class="text text1">리파르</strong>
+                            <p class="text text2">단로스위치 1구</p>
+                        </div>
+                    </div>
+                    <div class="item item-9">
+                        <div class="img-box slider-bg">
+                            <img src="https://kimjinyong0908.github.io/web_pf_img/Panasonic/main-3-9.png" alt="">
+                        </div>
+                        <div class="text-box">
+                            <strong class="text text1">베가와이드</strong>
+                            <p class="text text2">단로스위치 1구</p>
+                        </div>
+                    </div>
+                    <div class="item item-10">
+                        <div class="img-box slider-bg">
+                            <img src="https://kimjinyong0908.github.io/web_pf_img/Panasonic/main-3-10.png" alt="">
+                        </div>
+                        <div class="text-box">
+                            <strong class="text text1">라온</strong>
+                            <p class="text text2">단로스위치 1구</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div class="main main-4 active-on-visible" data-active-on-visible-delay="200">
+        <div class="container">
+            <div class="inner-container  con">
+                <div class="main-4-wrap">
+                    <div class="main-4-bg img-box">
+                        <div class="img-box web-bg">
+                            <img src="https://kimjinyong0908.github.io/web_pf_img/Panasonic/main-4.jpg" alt="">
+                        </div>
+                        <div class="img-box mobile-bg">
+                            <img src="https://kimjinyong0908.github.io/web_pf_img/Panasonic/main-4-M.jpg" alt="">
+                        </div>
+                        <div class="title-box">
+                            <small>want to talk?</small>
+                            <h2>고객상담 및 A/S문의</h2>
+                            <p>만족할 수 있는 품질로 보답하겠습니다.</p>
+                        </div>
+                        <div class="sub-title-box">
+                            <a href="#">Customer Center</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer main">
+        <div class="container">
+            <div class="footer-inner footer-con">
+                <div class="footer-wrap row">
+                    <div class="footer-logo cell img-box"><img src="https://kimjinyong0908.github.io/web_pf_img/Panasonic/logo-footer.png" alt=""></div>
+                    <div class="footer-text-box cell">
+                        <p><strong>상호명&emsp;</strong>파나소닉신동아(주)<strong>&emsp;대표&emsp;</strong>오사 노부히로</p>
+                        <p><strong>본사공장&emsp;</strong>부산광역시 강서구 녹산산단27로 135(송정동) / 051)831-7011~5</p>
+                        <p><strong>서울지사&emsp;</strong>서울특별시 금천구 가산디지털1로 186, 1101호(가산동, 제이플라츠) / 02)764-7041</p>
+                        <p><strong>고객지원TEL&emsp;</strong>080 - 704 - 7041<strong>&emsp;고객지원FAX&emsp;</strong>051)831-7091~2(평일 08:30 - 17:30 / 주말 및 공휴일 휴무)</p>
+                        <div class="footer-link footer-bottom-text">
+                            <a href="#">법적고지</a>
+                            <a href="#">사이트맵</a>
+                        </div>
+                        <p class="copyright footer-bottom-text">ⓒPanasonic Shin Dong A Co., Ltd.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="srcoll-top-link"><i class="xi-angle-up"></i></a>
+
+
+    <!-- js 불러오기 -->
+    <script src="./common.js"></script>
+</body></html>
