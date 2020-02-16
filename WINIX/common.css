@@ -512,10 +512,14 @@ button {
     overflow: hidden;
 }
 
+
+
+
+
 /* 메인 아이템(콘텐츠) 마다 배경색 칠해주기 시작 */
 .my-1 > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .item-1 {
     overflow: hidden;
-    background-image: url(http://image.winix.com/images/main/main_bg1.png);
+    background-image: url(https://kimjinyong0908.github.io/web_pf_img/WINIX/main-content-1-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -523,7 +527,7 @@ button {
 
 .my-1 > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .item-2 {
     overflow: hidden;
-    background-image: url(http://image.winix.com/images/main/main_bg2.png);
+    background-image: url(https://kimjinyong0908.github.io/web_pf_img/WINIX/main-content-2-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -531,7 +535,7 @@ button {
 
 .my-1 > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .item-3 {
     overflow: hidden;
-    background-image: url(http://image.winix.com/images/main/main_bg3.png);
+    background-image: url(https://kimjinyong0908.github.io/web_pf_img/WINIX/main-content-3-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -539,7 +543,7 @@ button {
 
 .my-1 > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .item-4 {
     overflow: hidden;
-    background-image: url(http://image.winix.com/images/main/main_bg4.png);
+    background-image: url(https://kimjinyong0908.github.io/web_pf_img/WINIX/main-content-4-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
