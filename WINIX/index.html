@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>WINIX-김진용</title>
+
+    <!-- 제이쿼리 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- 아울 캐러셀 불러오기, 제이쿼리 보다 밑에 있어야 합니다. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
+
+
+    <!-- 폰트어썸 불러오기 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <!-- css 불러오기 -->
+    <!-- js 불러오기는 맨 아래에 넣어야 합니다. -->
+
+    <link rel="stylesheet" href="./common.css">
+</head>
+
+<body>
+    <div class="header con-1">
+        <div class="header-wrap relative">
+            <div class="left-side-bar">
+                <div class="menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <h1 class="logo title">
+                <a href="#"><span class="hidden">위닉스 로고</span></a>
+            </h1>
+            <nav class="menu-box menu-box-1 row">
+                <ul class="row cell-right line-height-0-ch-only">
+                    <li class="cell login"><a href="#">LOGIN</a></li>
+                    <li class="cell cart"><a href="#">CART</a></li>
+                    <li class="cell serch"><a href="#" class=""><i class="fas fa-search"></i></a></li>
+                    <li class="cell product">
+                        <a href="#">
+                            <div class="pr-menu-icon row">
+                                <span class="cell"></span>
+                                <span class="cell"></span>
+                                <span class="cell"></span>
+                                <span class="cell"></span>
+                                <span class="cell"></span>
+                                <span class="cell"></span>
+                                <span class="cell"></span>
+                                <span class="cell"></span>
+                                <span class="cell"></span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="menu-all open">
+            <div class="menu-all-wrap relative row">
+                <nav class="menu-box menu-box-2">
+                    <ul class="">
+                        <li class="normal">
+                            <h2>
+                                <button class="btn-all-list">
+                                    <span class="num">01</span>
+                                    <span class="title">Life</span>
+                                    <span class="small-text">생활하다.</span>
+                                </button>
+                            </h2>
+                        </li>
+                        <li class="normal">
+                            <h2>
+                                <button class="btn-all-list">
+                                    <span class="num">02</span>
+                                    <span class="title">Care</span>
+                                    <span class="small-text">관리하다.</span>
+                                </button>
+                            </h2>
+                        </li>
+                        <li class="normal">
+                            <h2>
+                                <button class="btn-all-list">
+                                    <span class="num">03</span>
+                                    <span class="title">Daily Winix</span>
+                                    <span class="small-text">일상을 전하다.</span>
+                                </button>
+                            </h2>
+                        </li>
+                        <li class="normal">
+                            <h2>
+                                <button class="btn-all-list">
+                                    <span class="num">04</span>
+                                    <span class="title">Customer Service</span>
+                                    <span class="small-text">고객을 만나다.</span>
+                                </button>
+                            </h2>
+                        </li>
+                        <li class="normal">
+                            <h2>
+                                <button class="btn-all-list">
+                                    <span class="num">05</span>
+                                    <span class="title">Winix Story</span>
+                                    <span class="small-text">이야기 하다.</span>
+                                </button>
+                            </h2>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="section-line"></div>
+                <div class="product">
+                    <div class="product-wrap relative">
+                        <img src="https://kimjinyong0908.github.io/web_pf_img/WINIX/side-menu-pic-1.jpg" alt="">
+                        <p class="">위닉스
+                            <strong>제품을 등록</strong>하여<br>손쉽게 관리하세요.
+                        </p>
+                        <a href="#">제품 등록하기 ></a>
+                    </div>
+                </div>
+            </div>
+            <button class="close img-box"><img src="https://kimjinyong0908.github.io/web_pf_img/WINIX/ico-side-menu-close.png" alt=""></button>
+        </div>
+    </div>
+    <!-- 캐러셀 박스, 필수는 아니지만, 만드는게 좋다. -->
+    <div class="my-1 main-content">
+        <div class="owl-carousel owl-theme">
+            <!-- 필수 : .owl-carousel와 .owl-theme -->
+            <div class="item item-1">
+                <div class="con-1">
+                    <div class="img-box-1 img-box" style="width:800px;">
+                        <img src="https://kimjinyong0908.github.io/web_pf_img/WINIX/main-content-1.png" alt="">
+                    </div>
+                    <div class="text-1">
+                        <span>TOWER</span><span>PRIME</span>
+                    </div>
+                    <div class="text-2">
+                        <a href="#">타워 프라임 제품 보기</a>
+                        <p><span>360˚</span>서라운드 에어케어로 빈틈 없이 청정하게<br>쾌적한 공기를 전달하는<span>TOWER PRIME</span></p>
+                    </div>
+                </div>
+            </div><!-- 필수 : .item -->
+            <div class="item item-2">
+                <div class="con-1">
+                    <div class="img-box-1 img-box" style="width:800px;">
+                        <img src="https://kimjinyong0908.github.io/web_pf_img/WINIX/main-content-2.png" alt="">
+                    </div>
+                    <div class="text-1">
+                        <span>WINIX</span><span>MASTER S</span>
+                    </div>
+                    <div class="text-2">
+                        <a href="#">마스터 S제품 보기</a>
+                        <p>청정한 공기를 숨겨진 공간까지 전달하는<br>강력한 청정성능으로 완성된<span>MASTER S</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="item item-3">
+                <div class="con-1">
+                    <div class="img-box-1 img-box" style="width:800px;">
+                        <img src="https://kimjinyong0908.github.io/web_pf_img/WINIX/main-content-3.png" alt="">
+                    </div>
+                    <div class="text-1">
+                        <span>TUMBLE</span><span>DRYER</span>
+                    </div>
+                    <div class="text-2">
+                        <a href="#">텀블 건조기 제품 보기</a>
+                        <p>옷을 말리는 기술을 넘어 옷을 살리는 기술<br>바른 건조의 기준<span>WINIX 텀블건조기</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="item item-4">
+                <div class="con-1">
+                    <div class="img-box-1 img-box" style="width:800px;">
+                        <img src="https://kimjinyong0908.github.io/web_pf_img/WINIX/main-content-4.png" alt="">
+                    </div>
+                    <div class="text-1">
+                        <span>WINIX</span><span>PPOSONG</span>
+                    </div>
+                    <div class="text-2">
+                        <a href="#">뽀송 인버터 제품 보기</a>
+                        <p>스마트 인버터 시스템 탑재로 에너지<br>효율을 높인<span>WINIX 뽀송 인버터</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item-counter">
+            <span class="current-item-no"></span>
+            <span class="slash">/</span>
+            <span class="total-item-no"></span>
+        </div>
+        <div class="indicator">
+            <div></div>
+        </div>
+        <a href="#" class="main-link link-prev">
+            <img src="https://kimjinyong0908.github.io/web_pf_img/WINIX/main-ico-left.png" alt="">
+            <span>WINIX STORY</span>
+        </a>
+        <a href="#" class="main-link link-next">
+            <img src="https://kimjinyong0908.github.io/web_pf_img/WINIX/main-ico-right.png" alt="">
+            <span>DAILY WINIX</span>
+        </a>
+    </div>
+    <div class="footer">
+        <div class="footer-box footer-box-bg">
+            <div class="footer-wrap con">
+                <div class="footer-top row">
+                    <nav class="menu-box menu-box-3 cell">
+                        <ul class="row">
+                            <li class="cell"><strong>위닉스 고객만족센터</strong></li>
+                            <li class="cell"><span class="text-pink">1544 - 5081</span></li>
+                            <li class="cell"><span>월요일~금요일 09:00~18:00 / 토요일 09:00~17:00 (일요일, 공휴일 휴무)</span></li>
+                        </ul>
+                    </nav>
+                    <nav class="menu-box menu-box-4 cell-right">
+                        <ul class="row">
+                            <li class="cell"><a href="#" class="icon icon-1">페이스북</a></li>
+                            <li class="cell"><a href="#" class="icon icon-2">블로그</a></li>
+                            <li class="cell"><a href="#" class="icon icon-3">인스타그램</a></li>
+                            <li class="cell"><a href="#" class="icon icon-4">유튜브</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer-bottom row">
+                    <nav class="menu-box menu-box-5 cell">
+                        <div class="address">(주)위닉스 대표이사 : 윤희종, 윤철민 사업자등록번호 : 133-81-22434 통신판매업신고 : 경기시흥 2004-00639<br> 주소 : 경기도 시흥시 공단1대로 295 (정왕동) 이메일 : <a href="#" class="e-mail">winix@winix.com</a>법인영업문의 : 031-701-1173(내선 : 국내 4544 / 해외 4542)<br>COPYRIGHT © WINIX ALL RIGHTS RESERVED.
+                        </div>
+                    </nav>
+                    <nav class="menu-box menu-box-6 cell-right">
+                        <ul class="row">
+                            <li class="cell"><img src="https://kimjinyong0908.github.io/web_pf_img/WINIX/footer-pic-1.jpg" alt=""></li>
+                            <li class="cell"><img src="https://kimjinyong0908.github.io/web_pf_img/WINIX/footer-pic-2.jpg" alt=""></li>
+                            <li class="cell"><img src="https://kimjinyong0908.github.io/web_pf_img/WINIX/footer-pic-3.jpg" alt=""></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="footer-policy footer-policy-bg">
+            <div class="pilicy-wrap con row">
+                <nav class="menu-box menu-box-7 cell">
+                    <ul class="row">
+                        <li class="cell"><a href="#">위닉스 이용약관</a></li>
+                        <li class="cell"><a href="#">개인정보처리방침</a></li>
+                        <li class="cell"><a href="#">이메일무단수집거부</a></li>
+                        <li class="cell"><a href="#">사이트맵</a></li>
+                    </ul>
+                </nav>
+                <div class="familysite cell-right">
+                    <button class="btn-familysite-open lato_l">GLOBAL OFFICE<span><img src="http://image.winix.com/kr/images/icon_footer_checkbox.png" alt=""></span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- js 불러오기 -->
+    <script src="./common.js"></script>
+
+</body>
+
+</html>
