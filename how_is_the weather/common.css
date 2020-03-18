@@ -1,0 +1,979 @@
+/*  폰트 적용 */
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+html {
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    border: 3px solid #fff;
+}
+
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment {
+    display: block;
+    height: 10px;
+    background: url('./images/bg.png') #efefef
+}
+
+::-webkit-scrollbar-track {
+    background: #efefef;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, .2)
+}
+
+::-webkit-scrollbar-thumb {
+    height: 50px;
+    width: 50px;
+    background: #532aff;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, .1)
+}
+
+
+
+
+/* 노말라이즈 */
+body,
+ul,
+li,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* 라이브러리 */
+.con {
+    margin: 0 auto;
+}
+
+.img-box > img {
+    width: 100%;
+    display: block;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.cell {
+    float: left;
+    box-sizing: border-box;
+}
+
+.cell-right {
+    float: right;
+    box-sizing: border-box;
+}
+
+.margin-0-auto {
+    margin: 0 auto;
+}
+
+.block {
+    display: block;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.line-height-0-ch-only {
+    line-height: 0;
+}
+
+.line-height-0-ch-only > * {
+    line-height: normal;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute-left {
+    position: absolute;
+    left: 0;
+}
+
+.absolute-right {
+    position: absolute;
+    right: 0;
+}
+
+.absolute-middle {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.table {
+    display: table;
+}
+
+.table-cell {
+    display: table-cell;
+}
+
+input,
+button,
+select,
+fieldset {
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 0;
+    background-color: transparent;
+}
+
+fieldset {
+    padding: 0;
+    margin: 0;
+}
+
+.blind,
+legend {
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    font-size: 12px;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+button {
+    cursor: pointer;
+    padding: 0;
+}
+
+/* 커스텀 */
+
+/* 반응형 레이아웃 */
+
+.con {
+    max-width: 1380px;
+}
+
+.con2 {
+    width: 200px;
+    margin: 0 auto;
+}
+
+.con3 {
+    width: calc(100% - 340px);
+    margin: 0 auto;
+    margin-left: 140px;
+}
+
+.con-min-width {
+    min-width: 320px;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+/* 텍스트 통일화 */
+.text-box .title {
+    font-size: 37px;
+    color: #222;
+    font-weight: 400;
+}
+
+.text-box .sub-title {
+    font-size: 18px;
+    color: #888;
+}
+
+.text-box .content {
+    font-size: 18px;
+    color: #888;
+    font-weight: 300;
+}
+
+.text-box .content > strong {
+    color: #532aff;
+}
+
+.divide > .divide-li {
+    text-align: center;
+    line-height: 0;
+}
+
+.divide > .divide-li > * {
+    line-height: normal;
+}
+
+.divide > .divide-li > .cell-wrap {
+    display: inline-block;
+}
+
+/* 나오는 느낌 내기 - 시작 */
+.bg-box-wrap {
+    padding: 70px;
+}
+
+.bg-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.bg-box > .bg-item {
+    position: absolute;
+    background-image: url(https://kimjinyong0908.github.io/web_pf_img/how%20is%20the%20weather/1-basebox.png);
+}
+
+.bg-box > .bg-item.bg-item-corner {
+    width: 70px;
+    height: 70px;
+}
+
+.bg-box > .bg-item.bg-item-top-left {
+    top: 0;
+    left: 0;
+    background-position: top left;
+}
+
+.bg-box > .bg-item.bg-item-top-right {
+    top: 0;
+    right: 0;
+    background-position: top right;
+}
+
+.bg-box > .bg-item.bg-item-bottom-left {
+    bottom: 0;
+    left: 0;
+    background-position: bottom left;
+}
+
+.bg-box > .bg-item.bg-item-bottom-right {
+    bottom: 0;
+    right: 0;
+    background-position: bottom right;
+}
+
+.bg-box > .bg-item.bg-item-top {
+    top: 0;
+    left: 70px;
+    right: 70px;
+    height: 70px;
+    background-position: top center;
+}
+
+.bg-box > .bg-item.bg-item-bottom {
+    bottom: 0;
+    left: 70px;
+    right: 70px;
+    height: 70px;
+    background-position: bottom center;
+}
+
+.bg-box > .bg-item.bg-item-left {
+    left: 0;
+    top: 70px;
+    bottom: 70px;
+    width: 70px;
+    background-position: center left;
+}
+
+.bg-box > .bg-item.bg-item-right {
+    right: 0;
+    top: 70px;
+    bottom: 70px;
+    width: 70px;
+    background-position: center right;
+}
+
+.bg-box > .bg-item.bg-item-center {
+    top: 70px;
+    left: 70px;
+    right: 70px;
+    bottom: 70px;
+    background-position: -70px -70px;
+}
+
+.box-1 {
+    /*width:1200px;*/
+    margin: 0 auto;
+    position: relative;
+    z-index: 1
+}
+
+.video-box {}
+
+.video-box > video {
+    border-radius: 30px;
+}
+
+/* 탑으로 가는 버튼 */
+.to-top {
+    font-size: 15px;
+    color: #888;
+    padding: 15px;
+    border: 2px solid #dfdfdf;
+    cursor: pointer;
+    border-radius: 10px;
+    position: fixed;
+    left: 95%;
+    top: 90%;
+    z-index: 999;
+}
+
+.to-top:hover {
+    color: #532aff;
+    border-color: #532aff;
+}
+
+/* 1page 시작 */
+.page-1 .main-1 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.page-1 {
+    background-color: #f9f9f9;
+}
+
+/* 로고 시작 */
+.page-1 .logo-box {
+    width: 100px;
+    margin-left: -20px;
+}
+
+.page-1 ul li {
+    width: 50%;
+}
+
+/* 로고 밑 topic 시작 */
+.page-1 .topic-box {
+    color: #e8e8e8;
+    font-size: 20px;
+    text-shadow: 1px 1px white;
+    margin-top: 100px;
+}
+
+/* 타이틀 및 goal 시작 */
+.page-1 .main-text-box {
+    margin-top: 300px;
+}
+
+.page-1 .main-text-box > .title {
+    color: #532aff;
+    display: block;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.page-1 .main-text-box > .sub-title {
+    margin-top: 20px;
+    display: block;
+    font-size: 18px;
+    color: #888;
+    font-weight: 400;
+}
+
+.page-1 .box-2 {
+    box-sizing: border-box;
+    /* 500px이하만 영상 넣기 가능합니다. */
+    /* 수정 */
+    width: 400px;
+    position: relative;
+}
+
+.page-1 .box-2::after {
+    content: "";
+    display: block;
+    padding-top: calc(199.0846% + 140px);
+}
+
+.box-2 > .video-box > video {
+    top: 35px;
+    left: 25px;
+    position: absolute;
+    width: calc(100% - 60px);
+    height: calc(100% - 90px);
+}
+
+/* page2 시작 */
+.page-2 ul {
+    padding: 194px 0;
+}
+
+/* page3 시작 */
+.page-3 {
+    background-color: #f9f9f9;
+}
+
+.page-3 .main-3 {
+    padding-top: 156px;
+    padding-bottom: 156px;
+}
+
+
+.page-3 strong {
+    color: inherit !important;
+}
+
+.page-3 .graph-warp {
+    margin-top: 80px;
+}
+
+
+.page-3 .graph-warp .content > strong {
+    font-weight: 400;
+}
+
+
+.page-3 .zt-skill-bar {
+    color: #f9f9f9;
+    font-size: 18px;
+    line-height: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+    position: relative;
+    background-color: #532aff;
+    border-radius: 30px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, .3);
+    width: 0;
+    margin-top: 20px;
+}
+
+.page-3 .a-app.active-on-visible.active {
+    width: 1000px;
+}
+
+.page-3 .b-app.active-on-visible.active {
+    width: 450px;
+}
+
+.page-3 .zt-skill-bar p {
+    position: absolute;
+    top: 0;
+    right: 3%;
+    color: #fff;
+    z-index: 10;
+    margin: 0;
+}
+
+.page-3 .zt-skill-bar div {
+    background-color: #f9f9f9;
+    position: relative;
+    padding-left: 25px;
+    width: 40%;
+    border-radius: 20px;
+    color: #bfbfbf;
+}
+
+.page-3 .b-app div {
+    width: 70%;
+}
+
+.page-3 .zt-skill-bar.active-on-visible {
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.page-3 .zt-skill-bar.active-on-visible.active {
+    opacity: 1;
+    transition: all 1s ease-in-out;
+}
+
+
+
+.page-3 .zt-skill-bar span {
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 0;
+    height: 100%;
+    padding: 0 5px 0 10px;
+    background-color: #bfbfbf;
+    border-radius: 0 5px 5px 0;
+    color: #fff;
+}
+
+.page-3 .zt-skill-bar span:before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    top: 50%;
+    left: -3px;
+    margin-top: -3px;
+    background-color: #bfbfbf;
+    transform: rotate(45deg);
+}
+
+
+
+
+
+
+.page-3 .under {
+    margin-top: 200px;
+}
+
+.page-3 .under > li:last-child {
+    width: calc(100% - 340px);
+}
+
+.page-3 .divide-2 > li {
+    width: 33.33333%;
+    text-align: center;
+}
+
+.page-3 .divide-2 > li > .fas {
+    font-size: 26px;
+    color: #532aff;
+    margin-top: 40px;
+}
+
+
+.page-3 .divide-2 .button-1 {
+    width: 200px;
+    height: 118px;
+    position: relative;
+    margin: 0 auto;
+    transform: translateX(5px);
+    user-select: none;
+}
+
+.page-3 .divide-2 .button-1 > .text-box {
+    z-index: 5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-80%) translateX(-55%);
+}
+
+.page-3 .divide-2 .button-1 > .text-box > .content {
+    color: #523aff;
+    font-weight: 500;
+}
+
+.page-3 .divide-2 .button-1 > .bg-item {
+    position: absolute;
+    background-image: url(https://kimjinyong0908.github.io/web_pf_img/how%20is%20the%20weather/3-pointup.png);
+    background-repeat: no-repeat;
+    height: 118px;
+    width: 52px;
+    top: 0;
+    left: 0;
+
+}
+
+.page-3 .divide-2 .button-1 > .bg-item:first-child {
+    left: 0;
+    background-position: left center;
+}
+
+.page-3 .divide-2 .button-1 > .bg-item:nth-child(3) {
+    left: auto;
+    right: 0;
+    background-position: right center;
+}
+
+.page-3 .divide-2 .button-1 > .bg-item:nth-child(2) {
+    width: auto;
+    left: 52px;
+    right: 52px;
+    background-position: center;
+}
+
+/* page4 시작 */
+.page-4 .main-4 {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.page-4 .text-box > .content strong {
+    color: #888;
+    font-weight: 400;
+    margin-right: 80px;
+}
+
+.page-4 .divide > li:nth-child(2) {
+    margin-top: 60px;
+}
+
+.page-4 .userflow-box {
+    margin-top: 80px;
+}
+
+/* page5 시작 */
+.page-5 .divide {
+    position: relative;
+    top: 200px;
+    z-index: 10;
+}
+
+.page-5 .text-box > .sub-title {
+    color: #532aff;
+    font-weight: 700;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.page-5 .visual {
+    position: relative;
+}
+
+
+/* page6 시작 */
+.page-6 {
+    background-color: #f9f9f9;
+    margin-top: 200px;
+}
+
+.page-6 .main-6 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.page-6 .divide-li {
+    margin-top: 170px;
+}
+
+.page-6 .divide .divide-2 > li {
+    width: 50%;
+}
+
+.page-6 .divide .divide-2 > li:nth-child(2) {
+    padding-left: 100px;
+    position: relative;
+}
+
+.page-6 .box-2 {
+    box-sizing: border-box;
+    /* 500px이하만 영상 넣기 가능합니다. */
+    /* 수정 */
+    width: 480px;
+    position: relative;
+    z-index: 5;
+    top: -130px;
+}
+
+.page-6 .box-2::after {
+    content: "";
+    display: block;
+    padding-top: calc(199.0846% + 140px);
+}
+
+.page-6 .box-3 {
+    box-sizing: border-box;
+    /* 500px이하만 영상 넣기 가능합니다. */
+    /* 수정 */
+    width: 400px;
+    position: relative;
+    z-index: 5;
+    top: 250px;
+}
+
+.page-6 .box-3::after {
+    content: "";
+    display: block;
+    padding-top: calc(199.0846% + 140px);
+}
+
+.page-6 .box-3 > .video-box {
+    overflow: hidden;
+}
+
+.page-6 .box-3 > .video-box > video {
+    top: 35px;
+    left: 25px;
+    position: absolute;
+    width: calc(100% - 60px);
+    height: calc(100% - 90px);
+}
+
+.page-6 .divide .divide-2 > li .text-box {
+    text-align: left;
+    margin-top: 100px;
+}
+
+
+
+/* page7 시작 */
+.page-7 {
+    margin-top: 200px;
+}
+
+.page-7 .box-2 {
+    box-sizing: border-box;
+    /* 500px이하만 영상 넣기 가능합니다. */
+    /* 수정 */
+    width: 400px;
+    position: relative;
+    z-index: 5;
+}
+
+.page-7 .box-2::after {
+    content: "";
+    display: block;
+    padding-top: calc(199.0846% + 140px);
+}
+
+.page-7 .divide > li:nth-child(2) {
+    position: relative;
+}
+
+.page-7 .content-box {
+    margin-top: 50px;
+}
+
+.page-7 .content-box > .row {
+    white-space: nowrap;
+}
+
+.page-7 .content-box > .row > .cell {
+    float: none;
+    display: inline-block;
+    position: relative;
+}
+
+.page-7 .content-box > .row > .cell > .video-box {
+    width: 340px;
+    height: 700px;
+    display: inline-block;
+}
+
+.page-7 .content-box > .row > .cell > .video-box > img {
+    display: block;
+    width: 100%;
+    border-radius: 30px;
+}
+
+.page-7 .content-box > .row > .cell:nth-child(1),
+.content-box > .row > .cell:nth-child(7) {
+    transform: scale(0.6);
+    z-index: 1;
+    margin: 0 -80px;
+}
+
+.page-7 .content-box > .row > .cell:nth-child(2),
+.content-box > .row > .cell:nth-child(6) {
+    transform: scale(0.7);
+    border-color: yellow;
+    z-index: 2;
+    margin: 0 -80px;
+}
+
+.page-7 .content-box > .row > .cell:nth-child(3),
+.content-box > .row > .cell:nth-child(5) {
+    transform: scale(0.8);
+    border-color: pink;
+    z-index: 3;
+    margin: 0 -150px;
+}
+
+.page-7 .content-box > .row > .cell:nth-child(4) {
+    transform: scale(1);
+    border-color: green;
+    z-index: 4;
+}
+
+/* page8 시작 */
+/* page7 시작 */
+.page-8 {
+    margin-top: 200px;
+    background-color: #36383c;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.page-8 ul li:nth-child(2) {
+    position: relative;
+}
+
+.page-8 ul li:first-child .text-box > .sub-title {
+    color: #fff;
+}
+
+.page-8 ul li:last-child .text-box > .title {
+    color: #f9f9f9;
+    margin-bottom: 20px;
+}
+
+.page-8 .divide-2 .text-box {
+    margin-left: 80px;
+    margin-top: 300px;
+
+}
+
+.page-8 .video-box > video {
+    box-sizing: border-box;
+    width: 400px;
+    position: relative;
+    z-index: 5;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, .8);
+}
+
+.page-8 .video-box > video::after {
+    content: "";
+    display: block;
+    padding-top: calc(199.0846% + 140px);
+}
+
+/* page9 시작 */
+.page-9 {
+    background-color: #f9f9f9;
+    margin-top: 100px;
+    padding-top: 100px;
+}
+
+.page-9 .visual {
+    position: relative;
+    margin-top: 30px;
+}
+
+.page-9 .visual .fas {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 45%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    color: #888;
+    transition: color .3s;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.page-9 .visual .fas:hover {
+    color: #523aff;
+}
+
+.page-9 .visual .fa-angle-right {
+    left: auto;
+    right: 45%;
+    transform: translateX(-50%);
+}
+
+.page-9 .visual .slick-list {
+    padding-top: 60px;
+    margin: 0 -10px;
+}
+
+.page-9 .visual .slick-slide {
+    margin: 0 10px;
+}
+
+/* page10 시작 */
+.page-10 {
+    background-color: #f9f9f9;
+    margin-top: 100px;
+    padding-top: 100px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.page-10 .divide-2 .text-box {
+    margin-top: 180px;
+}
+
+.page-10 .box-2 {
+    box-sizing: border-box;
+    /* 500px이하만 영상 넣기 가능합니다. */
+    /* 수정 */
+    width: 490px;
+    position: relative;
+    z-index: 5;
+    margin-left: 100px;
+    top: -50px;
+}
+
+.page-10 .box-2::after {
+    content: "";
+    display: block;
+    padding-top: calc(199.0846% + 140px);
+}
+
+
+/* page11 시작 */
+.page-11 {
+    margin-top: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.page-11 .divide-2 > li {
+    width: 50%;
+}
+
+.page-11 .divide-2 .text-box {
+    margin-top: 180px;
+}
+
+.page-11 .divide-2 .text-box > .title {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.page-11 .divide-2 .text-box > .sub-title {
+    margin-top: 50px;
+    display: block;
+}
+
+.page-11 .box-2 {
+    box-sizing: border-box;
+    /* 500px이하만 영상 넣기 가능합니다. */
+    /* 수정 */
+    width: 440px;
+    position: relative;
+    z-index: 5;
+    margin-left: 100px;
+}
+
+.page-11 .box-2::after {
+    content: "";
+    display: block;
+    padding-top: calc(199.0846% + 140px);
+}
+
+
+/* page12 시작 */
+.page-12 {
+    text-align: center;
+    background: linear-gradient(to left, #ace0f9, #fff1eb);
+    padding: 30px 100px;
+}
+
+.page-12 .text-box .sub-title {
+    color: #222;
+    margin-top: 20px;
+    display: block;
+    font-weight: 300;
+}
