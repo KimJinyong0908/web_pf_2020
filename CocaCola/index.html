@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Coca Cola Korea - 김진용</title>
+    <!-- 모바일에서 화면배율을 디바이스 크기 기준으로 설정 -->
+    <!-- 이게 안되면 pc에서의 100px과 모바일에서의 100px이 디바이스 성능에 따라 달라집니다. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- 제이쿼리 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- AOS 플러그인 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- slick 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+
+    <!-- UI-Kit불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <!-- 폰트어썸 불러오기 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./common.css">
+
+</head>
+
+<body>
+    <!-- 시작 -->
+    <!-- 
+반응형 기준
+1차 : 1200px
+2차 : 992px 
+3차 : 768px 
+4차 : 480px 
+5차 : 320px
+-->
+    <div class="header">
+        <div class="header-container">
+            <div class="header-wrap con">
+                <div class="logo-box logo-white pc">
+                    <a href="#" class="img-box"><img src="https://kimjinyong0908.github.io/web_pf_img/Coca-cola-korea/cocacola-logo-white.png" alt=""></a>
+                </div>
+                <div class="logo-box logo-red pc">
+                    <a href="#" class="img-box"><img src="https://kimjinyong0908.github.io/web_pf_img/Coca-cola-korea/cocacola-logo-red-1.png" alt=""></a>
+                </div>
+                <div class="logo-box logo-red-ico mobile">
+                    <a href="#" class="img-box"><img src="https://kimjinyong0908.github.io/web_pf_img/Coca-cola-korea/cocacola-logo-ico.png" alt=""></a>
+                </div>
+                <nav class="menu-box line-height-0-ch-only relative pc">
+                    <ul class="row">
+                        <li class="cell">
+                            <a href="#">소개</a>
+                            <div class="sub-menu-box">
+                                <div class="sub-menu-width line-height-0-ch-only">
+                                    <ul class="row">
+                                        <li class="cell"><a href="#">글로벌 코카콜라</a></li>
+                                        <li class="cell"><a href="#">코리아 코카콜라</a></li>
+                                        <li class="cell"><a href="#">코카콜라 저니</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="cell">
+                            <a href="#">스토리</a>
+                            <div class="sub-menu-box">
+                                <div class="sub-menu-width line-height-0-ch-only">
+                                    <ul class="row">
+                                        <li class="cell"><a href="#">코크 브랜드</a></li>
+                                        <li class="cell"><a href="#">코크 스토리</a></li>
+                                        <li class="cell"><a href="#">라이프</a></li>
+                                        <li class="cell"><a href="#">커뮤니티</a></li>
+                                        <li class="cell"><a href="#">비디오</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="cell">
+                            <a href="#">함께하는 코크</a>
+                            <div class="sub-menu-box">
+                                <div class="sub-menu-width  line-height-0-ch-only">
+                                    <ul class="row">
+                                        <li class="cell"><a href="#">이벤트</a></li>
+                                        <li class="cell"><a href="#">캠패인</a></li>
+                                        <li class="cell"><a href="#">프로모션</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="cell"><a href="#">코카콜라 저니</a></li>
+                    </ul>
+                </nav>
+                <nav class="ico-box row">
+                    <ul class="row cell-right">
+                        <li class="cell cell-search-box">
+                            <form target="_blank" action="https://search.naver.com/search.naver" class="block absolute-middle absolute-right">
+                                <input name="query" type="text" placeholder="검색해주세요." class="block">
+                            </form>
+                            <a href="#"><i class="ico fas fa-search"></i></a>
+
+                        </li>
+                        <li class="cell"><a href="#"><i class="ico fas fa-globe-americas"></i></a></li>
+                        <li class="cell mobile toggle-side-bar-btn">
+                            <a href="#"><i class="ico fas fa-bars"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="mobil-menu-box right-side-bar-box">
+                    <div class="right-side-bar">
+                        <button class="toggle-side-bar-btn"><i class="fas fa-times"></i></button>
+                        <ul>
+                            <li class="first-menu">
+                                <a href="#">소개</a>
+                                <ul class="sec-menu-box">
+                                    <li class="sec-menu"><a href="#">글로벌 코카콜라</a></li>
+                                    <li class="sec-menu"><a href="#">코리아 코카콜라</a></li>
+                                    <li class="sec-menu"><a href="#">코카콜라 저니</a></li>
+                                </ul>
+                            </li>
+                            <li class="first-menu">
+                                <a href="#">스토리</a>
+                                <ul class="sec-menu-box">
+                                    <li class="sec-menu"><a href="#">코크 브랜드</a></li>
+                                    <li class="sec-menu"><a href="#">코크 스토리</a></li>
+                                    <li class="sec-menu"><a href="#">라이프</a></li>
+                                    <li class="sec-menu"><a href="#">커뮤니티</a></li>
+                                    <li class="sec-menu"><a href="#">비디오</a></li>
+                                </ul>
+                            </li>
+                            <li class="first-menu">
+                                <a href="#">함께하는 코크</a>
+                                <ul class="sec-menu-box">
+                                    <li class="sec-menu"><a href="#">이벤트</a></li>
+                                    <li class="sec-menu"><a href="#">캠패인</a></li>
+                                    <li class="sec-menu"><a href="#">프로모션</a></li>
+                                </ul>
+                            </li>
+                            <li class="first-menu"><a href="#">코카콜라 저니</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="main-bn">
+        <div class="main-bn-wrap">
+            <div class="slider-1">
+                <div class="slides">
+                    <div class="slide slide-1 active" style="background-image:url(https://kimjinyong0908.github.io/web_pf_img/Coca-cola-korea/main-bn-1.png);">
+                        <div class="text-box">
+                            <div class="img-box bubble"><img src="https://kimjinyong0908.github.io/web_pf_img/Coca-cola-korea/ico-bubble.png" alt=""></div>
+                            <h1 class="title">세상에서<br class="mobile"> 가장<br class="pc">완벽한<br class="mobile"><strong>레드</strong></h1>
+                        </div>
+                    </div>
+                    <div class="slide slide-2" style="background-image:url(https://kimjinyong0908.github.io/web_pf_img/Coca-cola-korea/main-bn-2.png);">
+                        <div class="text-box">
+                            <div class="img-box sign">
+                                <div class="text-wrap">
+                                    <h1 class="title">Little Big Moments</h1>
+                                    <p class="text small-X">작지만 소중한 순간을 쓰세요.<br class="pc"><br class="mobile">사소하지 않아! 이게 뭐라고 왜 이렇게 신이나?</p>
+                                    <a href="#" class="text small-O">loren more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide slide-3" style="background-image:url(https://kimjinyong0908.github.io/web_pf_img/Coca-cola-korea/main-bn-3.jpg.png);">
+                        <div class="text-box">
+                            <div class="img-box bubble"><img src="https://kimjinyong0908.github.io/web_pf_img/Coca-cola-korea/ico-bubble.png" alt=""></div>
+                            <h1 class="title">멋지고, 이쁘지<br class="pc">않아도<br class="mobile"> 좋아<br class="pc"><br class="pc">너 자신을<br class="pc"><br class="mobile"><strong>느껴봐!</strong></h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="side-btns">
+                    <div class="left-btn"><span><i class="fas fa-chevron-left"></i></span></div>
+                    <div class="right-btn"><span><i class="fas fa-chevron-right"></i></span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-line">
+        <div class="con">
+            <!-- v2 -->
+            <div class="section ico-box v2">
+                <div class="bubble-box ico-2">
+                    <div class="bubble bubble-3"></div>
+                    <div class="bubble bubble-2"></div>
+                    <div class="bubble bubble-1"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content content-1">
+        <div class="content-container">
+            <div class="content-wrap con row">
+                <div class="title-box-1" data-aos="fade-up">
+                    <div class="text-box cell-right">
+                        <h1 class="title">Coca Cola Red</h1>
+                        <h2 class="small-title">"세상에서 가장 완벽한<strong>레드</strong>를 <br class="mobile">여러분들께 보여드립니다."</h2>
+                        <p class="text small-X">전 세계 인구의 94%가 빨간색과 흰색의 조합을 바로 코카콜라라고 인식합니다.<br class="pc">빨간색은 어떤 방향으로든 역동성을 가지고 있기 떄문에, 우리가 익술 할 수 있습니다.<br class="pc"><br class="pc">이 상징은 코카콜라가 제공하는<strong>시원한 청량감</strong>과 바로 연결되어 있기도 합니다.</p>
+                        <a href="#">learn more ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-line">
+        <div class="con">
+            <!-- v2 -->
+            <div class="section ico-box v2">
+                <div class="bubble-box ico-2">
+                    <div class="bubble bubble-3"></div>
+                    <div class="bubble bubble-2"></div>
+                    <div class="bubble bubble-1"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content content-2">
+        <div class="content-container">
+            <div class="content-wrap con row">
+                <div class="text-box cell" data-aos="fade-up">
+                    <h1 class="title">Coca Cola Brand</h1>
+                    <h2 class="small-title">"코카-콜라<strong>브랜드</strong>가 이렇게 많았어?"</h2>
+                    <p class="text small-X">총 500여 개 이상의 브랜드<br class="pc">4,100여 가지 종류의 제품을 보유하고 있다.<br class="pc">19개 브랜드는 소비자들이 취향에 따라 옵션을 제공하고 있다.<br class="pc"><br class="pc">대표 브랜드로는 세계적인 브랜드 가치와 인지도를 자랑하는<br class="pc">코카-콜라, 환타, 스트라이프, 파워에이드, 미닛메이드,<br class="pc">글라소 비타민 워터, 조지아, 슈웹스, 골드 피크, 지코 등이 있다.</p>
+                    <a href="#">learn more ></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-line">
+        <div class="con">
+            <!-- v2 -->
+            <div class="section ico-box v2">
+                <div class="bubble-box ico-2">
+                    <div class="bubble bubble-3"></div>
+                    <div class="bubble bubble-2"></div>
+                    <div class="bubble bubble-1"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 중앙 컨텐츠 3차 visual story -->
+    <div class="content-3">
+        <div class="title-box">
+            <h1 class="title">Corporate Social Responsibility</h1>
+            <h2 class="small-title">"코카-콜라는 사랑을 받고<br class="small-O"> 사랑을 나눔니다."</h2>
+            <a href="#">learn more ></a>
+        </div>
+    </div>
+    <section class="visual con">
+        <div class="item item-1">
+            <div class="img-box" style="background-image:url(https://kimjinyong0908.github.io/web_pf_img/Coca-cola-korea/Responsibility-1.jpg);"><img src="" alt="">
+            </div>
+            <div class="text-box">
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non</p>
+            </div>
+        </div>
+        <div class="item item-2">
+            <div class="img-box" style="background-image:url(https://kimjinyong0908.github.io/web_pf_img/Coca-cola-korea/Responsibility-2.jpg);">
+            </div>
+            <div class="text-box">
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non</p>
+            </div>
+        </div>
+        <div class="item item-3">
+            <div class="img-box" style="background-image:url(https://kimjinyong0908.github.io/web_pf_img/Coca-cola-korea/Responsibility-3.jpg);">
+            </div>
+            <div class="text-box">
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non</p>
+            </div>
+        </div>
+        <div class="item item-4">
+            <div class="img-box" style="background-image:url(https://kimjinyong0908.github.io/web_pf_img/Coca-cola-korea/Responsibility-4.png);">
+            </div>
+            <div class="text-box">
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non</p>
+            </div>
+        </div>
+        <div class="item item-5">
+            <div class="img-box" style="background-image:url(https://kimjinyong0908.github.io/web_pf_img/Coca-cola-korea/Responsibility-1.jpg);">
+            </div>
+            <div class="text-box">
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non</p>
+            </div>
+        </div>
+        <div class="item item-6">
+            <div class="img-box" style="background-image:url(https://kimjinyong0908.github.io/web_pf_img/Coca-cola-korea/Responsibility-2.jpg);">
+            </div>
+            <div class="text-box">
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non</p>
+            </div>
+        </div>
+        <div class="item item-7">
+            <div class="img-box" style="background-image:url(https://kimjinyong0908.github.io/web_pf_img/Coca-cola-korea/Responsibility-3.jpg);">
+            </div>
+            <div class="text-box">
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non</p>
+            </div>
+        </div>
+        <div class="item item-8">
+            <div class="img-box" style="background-image:url(https://kimjinyong0908.github.io/web_pf_img/Coca-cola-korea/Responsibility-4.png);">
+            </div>
+            <div class="text-box">
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non</p>
+            </div>
+        </div>
+        <div class="item item-9">
+            <div class="img-box" style="background-image:url(https://kimjinyong0908.github.io/web_pf_img/Coca-cola-korea/Responsibility-1.jpg);">
+            </div>
+            <div class="text-box">
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non</p>
+            </div>
+        </div>
+        <div class="item item-10">
+            <div class="img-box" style="background-image:url(https://kimjinyong0908.github.io/web_pf_img/Coca-cola-korea/Responsibility-2.jpg);">
+            </div>
+            <div class="text-box">
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non</p>
+            </div>
+        </div>
+        <div class="item item-11">
+            <div class="img-box" style="background-image:url(https://kimjinyong0908.github.io/web_pf_img/Coca-cola-korea/Responsibility-3.jpg);">
+            </div>
+            <div class="text-box">
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non</p>
+            </div>
+        </div>
+        <div class="item item-12">
+            <div class="img-box" style="background-image:url(https://kimjinyong0908.github.io/web_pf_img/Coca-cola-korea/Responsibility-4.png);">
+            </div>
+            <div class="text-box">
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non</p>
+            </div>
+        </div>
+    </section>
+    <div class="footer">
+        <div class="footer-wrap con">
+            <div class="footer-top row">
+                <div class="img-box ico-company cell"><img src="https://kimjinyong0908.github.io/web_pf_img/Coca-cola-korea/cocacola-logo-company.png" alt=""></div>
+                <nav class="content-box row cell-right">
+                    <div class="copyright">© 2018 THE COCA-COLA COMPANY</div>
+                    <ul class="info-box row cell-right">
+                        <li class="cell"><a href="#">기업 연락처</a></li>
+                        <li class="cell"><a href="#">미디어 센터</a></li>
+                        <li class="cell"><a href="#">투자자</a></li>
+                        <li class="cell"><a href="#">정책들</a></li>
+                        <li class="cell"><a href="#">경영진</a></li>
+                        <li class="cell"><a href="#">역사</a></li>
+                        <li class="cell"><a href="#">FAQ</a></li>
+                        <li class="cell"><a href="#">국제사회</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-bottom row">
+                <div class="info cell">주소 : 서울시 종로구 새문안로 68 흥국생명빌딩 10층<br class="small-O"> 한국 코카-콜라 (110-786)<br class="pc"><br class="mobile">코카-콜라 음료(주) 고객상담실 : 080-024-5999<br class="small-O"> (상담 시간: 월 ~ 금 09:00 ~ 18:00)</div>
+                <div class="img-box ico-sns cell-right"><img src="https://kimjinyong0908.github.io/web_pf_img/Coca-cola-korea/ico-sns-1.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+    <!-- 끝 -->
+
+    <script src="./common.js"></script>
+</body>
+
+</html>
