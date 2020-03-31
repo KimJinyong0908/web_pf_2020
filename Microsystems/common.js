@@ -3,27 +3,22 @@ console.clear();
 AOS.init();
 
 /* 스크롤리 파이 */
-$(function () {
+$(function() {
     $.scrollify({
-        section: ".panel",
-        scrollbars: false,
-        interstitialSection: ".footer", // 푸터적용
-        before: function (i, panels) {
+        section:".panel",
+        scrollbars:true,
+        setHeights:false,
+        before:function(i,panels) {
             var ref = panels[i].attr("data-section-name");
-
-            /* 스크롤리 파이에 데이터 값 넣어서 그 친구 찾아서 변경해주는 방법 */
-            $('html').attr('data-under-line-index', i);
-
-
             $(".pagination .active").removeClass("active");
             $(".pagination").find("a[href=\"#" + ref + "\"]").addClass("active");
         },
-        afterRender: function () {
+        afterRender:function() {
             var pagination = "<ul class=\"pagination\">";
             var activeClass = "";
-            $(".panel").each(function (i) {
+            $(".panel").each(function(i) {
                 activeClass = "";
-                if (i === 0) {
+                if ( i === 0 ) {
                     activeClass = "active";
                 }
                 pagination += "<li><a class=\"" + activeClass + "\" href=\"#" + $(this).attr("data-section-name") + "\"><span class=\"hover-text\">" + $(this).attr("data-section-name").charAt(0).toUpperCase() + $(this).attr("data-section-name").slice(1) + "</span></a></li>";
@@ -36,6 +31,25 @@ $(function () {
             $(".pagination a").on("click", $.scrollify.move);
         }
     });
+    
+    $(window).resize(function() {
+        var windowWidth = $(window).width();
+        
+        if ( windowWidth < 600 ) {
+            if ( $.scrollify.isDisabled() == false ) {
+                $.scrollify.disable();
+            }
+        }
+        else {
+            if ( $.scrollify.isDisabled() ) {
+                $.scrollify.enable();
+            }
+        }
+    }).reisze();
+    
+    setTimeout(function() {
+        $.scrollify.update();
+    }, 3000);
 });
 
 

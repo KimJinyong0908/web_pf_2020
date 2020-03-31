@@ -225,6 +225,13 @@ a {
     }
 }
 
+
+@media ( min-width:600px ) {
+    .panel {
+        min-height:100vh;
+    }
+}
+
 .panel > .item .text-box > .text-3 {
     color: #f68d00;
     margin-top: 70px;
@@ -331,6 +338,10 @@ html[data-under-line-index="6"] .panel > .item-0 > .container {
 .slider-0 > .slides > div.active {
     opacity: 1;
 }
+
+
+
+
 
 .slider-0 > .slides > div > div {
     position: absolute;
@@ -1267,5 +1278,11 @@ html[data-under-line-index="6"] .panel > .item-0 > .container {
 
     .footer > .con > .footer-right {
         padding-top: 30px;
+    }
+}
+
+@media ( min-width:320px ) {
+    .panel {
+        min-height:100vh;
     }
 }
